@@ -46,6 +46,8 @@ import org.graphstream.stream.SourceBase.ElementType;
 import org.graphstream.ui.geom.Point3;
 import org.graphstream.ui.graphicGraph.stylesheet.Selector;
 
+import ecore.org.graphstream.graph.implementations.AbstractElement;
+
 /**
  * Graphical node.
  * 
@@ -444,6 +446,12 @@ public class GraphicNode extends GraphicElement implements Node {
 	}
 
 	public <T extends Edge> T getLeavingEdge(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected AbstractElement getInstance() {
 		// TODO Auto-generated method stub
 		return null;
 	}

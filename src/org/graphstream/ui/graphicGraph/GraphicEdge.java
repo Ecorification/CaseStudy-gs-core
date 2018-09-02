@@ -39,6 +39,8 @@ import org.graphstream.graph.Node;
 import org.graphstream.stream.SourceBase.ElementType;
 import org.graphstream.ui.graphicGraph.stylesheet.Selector;
 
+import ecore.org.graphstream.graph.implementations.AbstractElement;
+
 /**
  * Graphical edge.
  * 
@@ -392,6 +394,12 @@ public class GraphicEdge extends GraphicElement implements Edge {
 			for (int i = 0; i < edges.size(); i++)
 				edges.get(i).multi = i;
 		}
+	}
+
+	@Override
+	protected AbstractElement getInstance() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

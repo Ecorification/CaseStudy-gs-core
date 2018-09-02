@@ -38,6 +38,8 @@ import org.graphstream.stream.netstream.NetStreamEncoder;
 import org.junit.Assert;
 import org.junit.Test;
 
+import ecore.NullEObject;
+
 import java.nio.ByteBuffer;
 
 /**
@@ -213,7 +215,7 @@ public class TestNetStreamDecoder {
         Assert.assertTrue(sink.triggered);
     }
 
-    class FailSink implements Sink {
+    class FailSink extends NullEObject implements Sink {
         boolean triggered = false;
 
         @Override

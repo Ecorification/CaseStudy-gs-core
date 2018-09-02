@@ -39,6 +39,8 @@ import java.util.Stack;
 
 import org.graphstream.stream.Sink;
 
+import ecore.NullEObject;
+
 /**
  * A sink that can be used to display event in a PrintStream like System.out.
  * Format of messages can be customized, inserting keywords quoted with '%' in
@@ -150,7 +152,7 @@ import org.graphstream.stream.Sink;
  * </dd>
  * </dl>
  */
-public class VerboseSink implements Sink {
+public class VerboseSink extends NullEObject implements Sink {
 	public static final String DEFAULT_AN_FORMAT = "%prefix%[%sourceId%:%timeId%] add node \"%nodeId%\"%suffix%";
 	public static final String DEFAULT_CNA_FORMAT = "%prefix%[%sourceId%:%timeId%] set node \"%nodeId%\" +\"%attributeId%\"=%value%%suffix%";
 	public static final String DEFAULT_CNC_FORMAT = "%prefix%[%sourceId%:%timeId%] set node \"%nodeId%\" \"%attributeId%\"=%value%%suffix%";

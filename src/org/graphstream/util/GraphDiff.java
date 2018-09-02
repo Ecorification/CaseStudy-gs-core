@@ -49,6 +49,8 @@ import org.graphstream.stream.Sink;
 import org.graphstream.stream.file.FileSinkDGS;
 import org.graphstream.stream.file.FileSourceDGS;
 
+import ecore.NullEObject;
+
 public class GraphDiff {
 	protected static enum ElementType {
 		NODE, EDGE, GRAPH
@@ -829,7 +831,7 @@ public class GraphDiff {
 		}
 	}
 
-	private class Bridge implements Sink {
+	private class Bridge extends NullEObject implements Sink {
 		Graph g;
 
 		Bridge(Graph g) {

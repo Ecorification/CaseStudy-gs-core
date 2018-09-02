@@ -268,5 +268,11 @@ public class TestFilters {
 			return false;
 		}
 
+		@Override
+		protected ecore.org.graphstream.graph.implementations.AbstractElement getInstance() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
 	}
 }

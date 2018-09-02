@@ -1444,4 +1444,10 @@ public class GraphicGraph extends AbstractElement implements Graph,
 			}
 		}
 	}
+
+	@Override
+	protected ecore.org.graphstream.graph.implementations.AbstractElement getInstance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

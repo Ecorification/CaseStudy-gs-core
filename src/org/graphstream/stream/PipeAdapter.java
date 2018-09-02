@@ -31,6 +31,8 @@
  */
 package org.graphstream.stream;
 
+import ecore.NullEObject;
+
 /**
  * Adapter for the filter interface.
  * 
@@ -38,7 +40,7 @@ package org.graphstream.stream;
  * All methods are empty.
  * </p>
  */
-public class PipeAdapter implements Pipe {
+public class PipeAdapter extends NullEObject implements Pipe {
 	public void addAttributeSink(AttributeSink listener) {
 	}
 

@@ -41,6 +41,9 @@ import org.graphstream.graph.Graph;
 import org.graphstream.stream.AttributeSink;
 import org.graphstream.ui.graphicGraph.stylesheet.Style;
 import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants.Units;
+
+import ecore.NullEObject;
+
 import org.graphstream.ui.graphicGraph.stylesheet.Value;
 import org.graphstream.ui.graphicGraph.stylesheet.Values;
 
@@ -68,7 +71,7 @@ import org.graphstream.ui.graphicGraph.stylesheet.Values;
  * {@link #addSprite(String, Class, Values)} methods.
  * </p>
  */
-public class SpriteManager implements Iterable<Sprite>, AttributeSink {
+public class SpriteManager extends NullEObject implements Iterable<Sprite>, AttributeSink {
 
     /**
      * class level logger

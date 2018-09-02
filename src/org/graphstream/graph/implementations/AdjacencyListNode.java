@@ -283,4 +283,10 @@ public class AdjacencyListNode extends AbstractNode {
 	public <T extends Edge> Iterator<T> getLeavingEdgeIterator() {
 		return new EdgeIterator<T>(O_EDGE);
 	}
+
+	@Override
+	protected ecore.org.graphstream.graph.implementations.AbstractNode getInstance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

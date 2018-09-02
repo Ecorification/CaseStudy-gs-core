@@ -40,6 +40,8 @@ import org.graphstream.ui.graphicGraph.stylesheet.Style;
 import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
 import org.graphstream.ui.graphicGraph.stylesheet.Values;
 
+import ecore.org.graphstream.graph.implementations.AbstractElement;
+
 /**
  * A small gentle sprite.
  */
@@ -355,5 +357,11 @@ public class GraphicSprite extends GraphicElement {
 
 	@Override
 	protected void removed() {
+	}
+
+	@Override
+	protected AbstractElement getInstance() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

@@ -310,6 +310,12 @@ public class AdjacencyListGraph extends AbstractGraph {
 		return new NodeIterator<T>();
 	}
 
+	@Override
+	protected ecore.org.graphstream.graph.implementations.AbstractGraph getInstance() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	/*
 	 * For performance tuning
 	 * 

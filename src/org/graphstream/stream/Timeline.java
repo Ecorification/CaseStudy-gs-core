@@ -42,7 +42,9 @@ import org.graphstream.graph.implementations.Graphs;
 import org.graphstream.util.GraphDiff;
 import org.graphstream.util.VerboseSink;
 
-public class Timeline implements Source, Replayable, Iterable<Graph> {
+import ecore.NullEObject;
+
+public class Timeline extends NullEObject implements Source, Replayable, Iterable<Graph> {
 
 	public static final String TIME_PREFIX = "time";
 

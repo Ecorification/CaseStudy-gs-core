@@ -40,6 +40,8 @@ import org.graphstream.graph.Edge;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 
+import ecore.NullEObject;
+
 /**
  * Base implementation for graph output to files.
  * 
@@ -77,7 +79,7 @@ import org.graphstream.graph.Node;
  * </ul>
  * </p>
  */
-public abstract class FileSinkBase implements FileSink {
+public abstract class FileSinkBase  extends NullEObject implements FileSink {
 	// Attribute
 
 	/**
