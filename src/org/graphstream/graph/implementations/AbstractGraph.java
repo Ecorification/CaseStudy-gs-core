@@ -90,8 +90,8 @@ public abstract class AbstractGraph extends AbstractElement implements Graph,
 	private boolean strictChecking;
 	private boolean autoCreate;
 	GraphListeners listeners;
-	private NodeFactory<? extends AbstractNode> nodeFactory;
-	private EdgeFactory<? extends AbstractEdge> edgeFactory;
+	private NodeFactory<? extends Node> nodeFactory;
+	private EdgeFactory<? extends Edge> edgeFactory;
 
 	private double step = 0;
 
@@ -323,7 +323,7 @@ public abstract class AbstractGraph extends AbstractElement implements Graph,
 			return (T) node;
 		}
 
-		node = nodeFactory.newInstance(id, this);
+		node = (AbstractNode) nodeFactory.newInstance(id, this);
 		addNodeCallback(node);
 
 		listeners.sendNodeAdded(id);
@@ -882,7 +882,7 @@ public abstract class AbstractGraph extends AbstractElement implements Graph,
 				dst = addNode(dstId);
 		}
 		// at this point edgeId is not in use and both src and dst are not null
-		edge = edgeFactory.newInstance(edgeId, src, dst, directed);
+		edge = (AbstractEdge) edgeFactory.newInstance(edgeId, src, dst, directed);
 		// see if the endpoints accept the edge
 		if (!src.addEdgeCallback(edge)) {
 			if (strictChecking)
