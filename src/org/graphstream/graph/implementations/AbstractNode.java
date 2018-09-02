@@ -40,7 +40,6 @@ import java.util.NoSuchElementException;
 import org.graphstream.graph.BreadthFirstIterator;
 import org.graphstream.graph.DepthFirstIterator;
 import org.graphstream.graph.Edge;
-import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.stream.SourceBase;
 
@@ -61,14 +60,11 @@ import org.graphstream.stream.SourceBase;
  * graph. This class has a low memory overhead (one reference as field).
  * </p>
  */
-public abstract class AbstractNode extends AbstractElement implements Node {
+public abstract class AbstractNode extends unification.org.graphstream.graph.implementations.UnifiedAbstractNode implements Node {
 
 	// *** Fields ***
 
-	/**
-	 * The graph to which this node belongs
-	 */
-	protected Graph graph;
+	
 
 	// *** Constructors
 
@@ -83,7 +79,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 */
 	protected AbstractNode(AbstractGraph graph, String id) {
 		super(id);
-		this.graph = graph;
+		this.setGraph(graph);
 	}
 
 	// *** Inherited from abstract element ***
@@ -91,7 +87,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	@Override
 	protected void attributeChanged(AttributeChangeEvent event,
 			String attribute, Object oldValue, Object newValue) {
-		((AbstractGraph)graph).listeners.sendAttributeChangedEvent(id,
+		((AbstractGraph)getGraph()).getListeners().sendAttributeChangedEvent(getId(),
 				SourceBase.ElementType.NODE, attribute, event, oldValue,
 				newValue);
 	}
@@ -120,19 +116,10 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 * @see org.graphstream.graph.implementations.AbstractElement#nullAttributesAreErrors()
 	 */
 	protected boolean nullAttributesAreErrors() {
-		return graph.nullAttributesAreErrors();
+		return getGraph().nullAttributesAreErrors();
 	}
 
 	// *** Inherited from Node ***
-
-	/**
-	 * This implementation returns {@link #graph}.
-	 * 
-	 * @see org.graphstream.graph.Node#getGraph()
-	 */
-	public Graph getGraph() {
-		return graph;
-	}
 
 	public abstract int getDegree();
 
@@ -241,7 +228,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 * @see org.graphstream.graph.Node#getEdgeToward(int)
 	 */
 	public <T extends Edge> T getEdgeToward(int index) {
-		return getEdgeToward(graph.getNode(index));
+		return getEdgeToward(getGraph().getNode(index));
 	}
 
 	/**
@@ -250,7 +237,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 * @see org.graphstream.graph.Node#getEdgeToward(java.lang.String)
 	 */
 	public <T extends Edge> T getEdgeToward(String id) {
-		return getEdgeToward(graph.getNode(id));
+		return getEdgeToward(getGraph().getNode(id));
 	}
 
 	public abstract <T extends Edge> T getEdgeFrom(Node node);
@@ -261,7 +248,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 * @see org.graphstream.graph.Node#getEdgeFrom(int)
 	 */
 	public <T extends Edge> T getEdgeFrom(int index) {
-		return getEdgeFrom(graph.getNode(index));
+		return getEdgeFrom(getGraph().getNode(index));
 	}
 
 	/**
@@ -270,7 +257,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 * @see org.graphstream.graph.Node#getEdgeFrom(java.lang.String)
 	 */
 	public <T extends Edge> T getEdgeFrom(String id) {
-		return getEdgeFrom(graph.getNode(id));
+		return getEdgeFrom(getGraph().getNode(id));
 	}
 
 	public abstract <T extends Edge> T getEdgeBetween(Node node);
@@ -281,7 +268,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 * @see org.graphstream.graph.Node#getEdgeBetween(int)
 	 */
 	public <T extends Edge> T getEdgeBetween(int index) {
-		return getEdgeBetween(graph.getNode(index));
+		return getEdgeBetween(getGraph().getNode(index));
 	}
 
 	/**
@@ -290,7 +277,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 * @see org.graphstream.graph.Node#getEdgeBetween(java.lang.String)
 	 */
 	public <T extends Edge> T getEdgeBetween(String id) {
-		return getEdgeBetween(graph.getNode(id));
+		return getEdgeBetween(getGraph().getNode(id));
 	}
 
 	// get[_|Entering|Leaving]EdgeIterator
@@ -595,5 +582,8 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	 */
 	public boolean isIncidentEdge(Edge e) {
 		return e.getSourceNode() == this || e.getTargetNode() == this;
+	}
+
+	public AbstractNode() {
 	}
 }

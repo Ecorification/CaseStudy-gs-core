@@ -31,15 +31,15 @@
  */
 package org.graphstream.stream.netstream;
 
-import org.graphstream.stream.binary.ByteDecoder;
-import org.graphstream.stream.binary.ByteEncoder;
-import org.graphstream.stream.binary.ByteFactory;
-
 import java.lang.reflect.Array;
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.logging.Logger;
+
+import org.graphstream.stream.binary.ByteDecoder;
+import org.graphstream.stream.binary.ByteEncoder;
+import org.graphstream.stream.binary.ByteFactory;
 
 /**
  * @since 22/01/16.

@@ -38,7 +38,7 @@ import java.util.Iterator;
  * Structures are generic objects which may contain nodes and edges.
  * 
  */
-public interface Structure {
+public interface Structure extends ecore.org.graphstream.graph.Structure {
 	/**
 	 * Number of nodes in this graph.
 	 * 

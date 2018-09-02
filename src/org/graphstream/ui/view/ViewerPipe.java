@@ -31,10 +31,10 @@
  */
 package org.graphstream.ui.view;
 
+import java.util.HashSet;
+
 import org.graphstream.stream.ProxyPipe;
 import org.graphstream.stream.SourceBase;
-
-import java.util.HashSet;
 
 /**
  * Shell around a proxy pipe coming from the viewer allowing to put viewer

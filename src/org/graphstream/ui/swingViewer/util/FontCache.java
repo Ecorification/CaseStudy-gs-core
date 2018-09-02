@@ -31,12 +31,12 @@
  */
 package org.graphstream.ui.swingViewer.util;
 
-import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
-
 import java.awt.Font;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
+
+import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
 
 /**
  * A cache for fonts.

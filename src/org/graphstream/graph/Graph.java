@@ -126,7 +126,7 @@ import org.graphstream.ui.view.Viewer;
  * will always iterate on all the nodes of <code>g</code>.
  * </p>
  */
-public interface Graph extends Element, Pipe, Iterable<Node>, Structure {
+public interface Graph extends Element, Pipe, Iterable<Node>, Structure, ecore.org.graphstream.graph.Graph {
 	// Access
 
 	/**

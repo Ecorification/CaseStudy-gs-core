@@ -44,6 +44,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.zip.GZIPInputStream;
 
+import org.graphstream.stream.file.dgs.OldFileSourceDGS;
+
 /**
  * Class responsible for parsing files in the DGS format (old versions of the
  * format).

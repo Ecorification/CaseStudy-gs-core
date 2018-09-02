@@ -31,13 +31,13 @@
  */
 package org.graphstream.ui.graphicGraph;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.Node;
 import org.graphstream.stream.SourceBase.ElementType;
 import org.graphstream.ui.graphicGraph.stylesheet.Selector;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Graphical edge.
@@ -113,8 +113,8 @@ public class GraphicEdge extends GraphicElement implements Edge {
 		this.to = to;
 		this.directed = dir;
 
-		if (this.attributes == null)
-			this.attributes = new HashMap<String, Object>();
+		if (this.getAttributes() == null)
+			this.setAttributes(new HashMap<String, Object>());
 
 		if (attributes != null)
 			addAttributes(attributes);

@@ -32,17 +32,20 @@
 package org.graphstream.ui.graphicGraph.stylesheet.parser;
 
 import java.awt.Color;
-
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
 
-import org.graphstream.ui.graphicGraph.stylesheet.*;
-
+import org.graphstream.ui.graphicGraph.stylesheet.Colors;
+import org.graphstream.ui.graphicGraph.stylesheet.Rule;
+import org.graphstream.ui.graphicGraph.stylesheet.Selector;
+import org.graphstream.ui.graphicGraph.stylesheet.Style;
+import org.graphstream.ui.graphicGraph.stylesheet.StyleSheet;
+import org.graphstream.ui.graphicGraph.stylesheet.Value;
+import org.graphstream.ui.graphicGraph.stylesheet.Values;
 import org.graphstream.util.parser.ParseException;
 import org.graphstream.util.parser.SimpleCharStream;
 import org.graphstream.util.parser.Token;
-import org.graphstream.util.parser.TokenMgrError;
 
 @SuppressWarnings("unused")
 public class StyleSheetParser implements StyleSheetParserConstants {

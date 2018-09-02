@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore"
+            class="ecore.EcorePackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.java.io"
+            class="ecore.datatypes.java.io.IoPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.java.lang"
+            class="ecore.datatypes.java.lang.LangPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.java.util"
+            class="ecore.datatypes.java.util.UtilPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.org.graphstream.graph"
+            class="ecore.datatypes.org.graphstream.graph.GraphPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.org.graphstream.stream"
+            class="ecore.datatypes.org.graphstream.stream.StreamPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.org.graphstream.stream.file"
+            class="ecore.datatypes.org.graphstream.stream.file.FilePackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.org.graphstream.stream.Replayable"
+            class="ecore.datatypes.org.graphstream.stream.Replayable.ReplayablePackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.datatypes.org.graphstream.ui.view"
+            class="ecore.datatypes.org.graphstream.ui.view.ViewPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.org.graphstream.graph"
+            class="ecore.org.graphstream.graph.GraphPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.org.graphstream.graph.implementations"
+            class="ecore.org.graphstream.graph.implementations.ImplementationsPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CaseStudy-gs-core -->
+      <package
+            uri="CaseStudy-gs-core/ecore.org.graphstream.stream"
+            class="ecore.org.graphstream.stream.StreamPackage"/>
+   </extension>
+
+</plugin>

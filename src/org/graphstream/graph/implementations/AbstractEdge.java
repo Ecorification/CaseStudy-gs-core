@@ -49,29 +49,11 @@ import org.graphstream.stream.SourceBase.ElementType;
  * methods are executed in O(1) time.
  * </p>
  */
-public class AbstractEdge extends AbstractElement implements Edge {
+public class AbstractEdge extends unification.org.graphstream.graph.implementations.UnifiedAbstractEdge implements Edge {
 
 	// *** Fields ***
 
-	/**
-	 * The source node
-	 */
-	protected AbstractNode source;
-
-	/**
-	 * The target node
-	 */
-	protected AbstractNode target;
-
-	/**
-	 * Is this edge directed ?
-	 */
-	protected boolean directed;
-
-	/**
-	 * The graph to which this edge belongs
-	 */
-	protected AbstractGraph graph;
+	
 
 	// *** Constructors ***
 
@@ -92,10 +74,10 @@ public class AbstractEdge extends AbstractElement implements Edge {
 			boolean directed) {
 		super(id);
 		assert source != null && target != null : "An edge cannot have null endpoints";
-		this.source = source;
-		this.target = target;
-		this.directed = directed;
-		this.graph = (AbstractGraph) source.getGraph();
+		this.setSource(source);
+		this.setTarget(target);
+		this.setDirected(directed);
+		this.setGraph((AbstractGraph) source.getGraph());
 	}
 
 	// *** Inherited from AbstractElement ***
@@ -103,7 +85,7 @@ public class AbstractEdge extends AbstractElement implements Edge {
 	@Override
 	protected void attributeChanged(AttributeChangeEvent event,
 			String attribute, Object oldValue, Object newValue) {
-		graph.listeners.sendAttributeChangedEvent(id, ElementType.EDGE,
+		getGraph().getListeners().sendAttributeChangedEvent(getId(), ElementType.EDGE,
 				attribute, event, oldValue, newValue);
 	}
 
@@ -114,51 +96,50 @@ public class AbstractEdge extends AbstractElement implements Edge {
 	 */
 	@Override
 	protected boolean nullAttributesAreErrors() {
-		return graph.nullAttributesAreErrors();
+		return getGraph().nullAttributesAreErrors();
 	}
 
 	@Override
 	public String toString() {
-		return String.format("%s[%s-%s%s]", getId(), source, directed ? ">"
-				: "-", target);
+		return String.format("%s[%s-%s%s]", getId(), getSource(), isDirected() ? ">"
+				: "-", getTarget());
 	}
 
 	// *** Inherited from Edge ***
 
 	@SuppressWarnings("unchecked")
 	public <T extends Node> T getNode0() {
-		return (T) source;
+		return (T) getSource();
 	}
 
 	@SuppressWarnings("unchecked")
 	public <T extends Node> T getNode1() {
-		return (T) target;
+		return (T) getTarget();
 	}
 
 	@SuppressWarnings("unchecked")
 	public <T extends Node> T getOpposite(Node node) {
-		if (node == source)
-			return (T) target;
-		if (node == target)
-			return (T) source;
+		if (node == getSource())
+			return (T) getTarget();
+		if (node == getTarget())
+			return (T) getSource();
 		return null;
 	}
 
 	@SuppressWarnings("unchecked")
 	public <T extends Node> T getSourceNode() {
-		return (T) source;
+		return (T) getSource();
 	}
 
 	@SuppressWarnings("unchecked")
 	public <T extends Node> T getTargetNode() {
-		return (T) target;
-	}
-
-	public boolean isDirected() {
-		return directed;
+		return (T) getTarget();
 	}
 
 	public boolean isLoop() {
-		return source == target;
+		return getSource() == getTarget();
+	}
+
+	public AbstractEdge() {
 	}
 }

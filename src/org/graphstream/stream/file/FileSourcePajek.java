@@ -34,7 +34,6 @@ package org.graphstream.stream.file;
 import java.io.Reader;
 
 import org.graphstream.stream.file.pajek.PajekParser;
-
 import org.graphstream.util.parser.Parser;
 import org.graphstream.util.parser.ParserFactory;
 

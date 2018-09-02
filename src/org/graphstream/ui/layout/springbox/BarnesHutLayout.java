@@ -31,6 +31,13 @@
  */
 package org.graphstream.ui.layout.springbox;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Random;
+import java.util.logging.Logger;
+
 import org.graphstream.stream.Sink;
 import org.graphstream.stream.SourceBase;
 import org.graphstream.stream.sync.SinkTime;
@@ -43,13 +50,6 @@ import org.miv.pherd.ntree.Anchor;
 import org.miv.pherd.ntree.CellSpace;
 import org.miv.pherd.ntree.OctreeCellSpace;
 import org.miv.pherd.ntree.QuadtreeCellSpace;
-
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Random;
-import java.util.logging.Logger;
 
 /**
  * Base implementation of a Barnes-Hut space decomposition and particle

@@ -33,8 +33,6 @@ package org.graphstream.stream.file;
 
 import java.util.ArrayList;
 
-import org.graphstream.stream.file.FileSinkBase;
-
 /**
  * Base implementation for filtered graph output to files.
  * 

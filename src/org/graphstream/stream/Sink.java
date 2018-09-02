@@ -66,5 +66,5 @@ package org.graphstream.stream;
  * @see AttributeSink
  * @see ElementSink
  */
-public interface Sink extends AttributeSink, ElementSink {
+public interface Sink extends AttributeSink, ElementSink, ecore.org.graphstream.stream.Sink {
 }

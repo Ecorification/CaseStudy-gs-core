@@ -31,13 +31,13 @@
  */
 package org.graphstream.ui.layout;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.stream.ProxyPipe;
 import org.graphstream.stream.Source;
 import org.graphstream.stream.thread.ThreadProxyPipe;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Allows to run a layout in a distinct thread.

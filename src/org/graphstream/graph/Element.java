@@ -63,7 +63,7 @@ import java.util.Map;
  * @since July 12 2007
  * 
  */
-public interface Element {
+public interface Element extends ecore.org.graphstream.graph.Element {
 	/**
 	 * Unique identifier of this element.
 	 * 

@@ -1,0 +1,2524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/CaseStudy-gs-core-Ecorified/src" modelPluginID="CaseStudy-gs-core-Ecorified" modelName="CaseStudy-gs-core" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>CaseStudy-gs-core.ecore</foreignModel>
+  <genPackages prefix="Ecore" disposableProviderFactory="true" fileExtensions="ecorified">
+    <ecorePackage href="CaseStudy-gs-core.ecore#/"/>
+    <genClasses>
+      <ecoreClass href="CaseStudy-gs-core.ecore#//RootContainer"/>
+      <genFeatures property="None" children="true" createChild="true">
+        <ecoreFeature xsi:type="ecore:EReference" href="CaseStudy-gs-core.ecore#//RootContainer/containedElements"/>
+      </genFeatures>
+    </genClasses>
+    <nestedGenPackages prefix="Datatypes" disposableProviderFactory="true">
+      <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes"/>
+      <nestedGenPackages prefix="Java" disposableProviderFactory="true">
+        <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/java"/>
+        <nestedGenPackages prefix="Io" disposableProviderFactory="true">
+          <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/java/io"/>
+          <genDataTypes>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/io/IOException"/>
+          </genDataTypes>
+        </nestedGenPackages>
+        <nestedGenPackages prefix="Lang" disposableProviderFactory="true">
+          <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/java/lang"/>
+          <genDataTypes>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/lang/CharSequence"/>
+          </genDataTypes>
+          <genDataTypes>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/lang/IndexOutOfBoundsException"/>
+          </genDataTypes>
+          <genDataTypes>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/lang/Iterable/T"/>
+            </genTypeParameters>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/lang/Iterable"/>
+          </genDataTypes>
+          <genDataTypes>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/lang/Number"/>
+          </genDataTypes>
+          <genDataTypes>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/lang/ObjectArray"/>
+          </genDataTypes>
+          <genDataTypes>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/lang/StringArray"/>
+          </genDataTypes>
+        </nestedGenPackages>
+        <nestedGenPackages prefix="Util" disposableProviderFactory="true">
+          <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/java/util"/>
+          <genDataTypes>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/util/ArrayList/E"/>
+            </genTypeParameters>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/util/ArrayList"/>
+          </genDataTypes>
+          <genDataTypes>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/util/Collection/E"/>
+            </genTypeParameters>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/util/Collection"/>
+          </genDataTypes>
+          <genDataTypes>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/util/HashMap/K"/>
+            </genTypeParameters>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/util/HashMap/V"/>
+            </genTypeParameters>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/util/HashMap"/>
+          </genDataTypes>
+          <genDataTypes>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/util/Iterator/E"/>
+            </genTypeParameters>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/util/Iterator"/>
+          </genDataTypes>
+          <genDataTypes>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/util/Map/K"/>
+            </genTypeParameters>
+            <genTypeParameters>
+              <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/java/util/Map/V"/>
+            </genTypeParameters>
+            <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/java/util/Map"/>
+          </genDataTypes>
+        </nestedGenPackages>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Org" disposableProviderFactory="true">
+        <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org"/>
+        <nestedGenPackages prefix="Graphstream" disposableProviderFactory="true">
+          <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream"/>
+          <nestedGenPackages prefix="Graph" disposableProviderFactory="true">
+            <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph"/>
+            <genDataTypes>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph/EdgeFactory/T"/>
+              </genTypeParameters>
+              <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph/EdgeFactory"/>
+            </genDataTypes>
+            <genDataTypes>
+              <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph/EdgeRejectedException"/>
+            </genDataTypes>
+            <genDataTypes>
+              <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph/ElementNotFoundException"/>
+            </genDataTypes>
+            <genDataTypes>
+              <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph/IdAlreadyInUseException"/>
+            </genDataTypes>
+            <genDataTypes>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph/NodeFactory/T"/>
+              </genTypeParameters>
+              <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/graph/NodeFactory"/>
+            </genDataTypes>
+          </nestedGenPackages>
+          <nestedGenPackages prefix="Stream" disposableProviderFactory="true">
+            <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/stream"/>
+            <genDataTypes>
+              <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/stream/GraphParseException"/>
+            </genDataTypes>
+            <nestedGenPackages prefix="File" disposableProviderFactory="true">
+              <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/stream/file"/>
+              <genDataTypes>
+                <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/stream/file/FileSink"/>
+              </genDataTypes>
+              <genDataTypes>
+                <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/stream/file/FileSource"/>
+              </genDataTypes>
+            </nestedGenPackages>
+            <nestedGenPackages prefix="Replayable" disposableProviderFactory="true">
+              <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/stream/Replayable"/>
+              <genDataTypes>
+                <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/stream/Replayable/Controller"/>
+              </genDataTypes>
+            </nestedGenPackages>
+          </nestedGenPackages>
+          <nestedGenPackages prefix="Ui" disposableProviderFactory="true">
+            <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/ui"/>
+            <nestedGenPackages prefix="View" disposableProviderFactory="true">
+              <ecorePackage href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/ui/view"/>
+              <genDataTypes>
+                <ecoreDataType href="CaseStudy-gs-core.ecore#//datatypes/org/graphstream/ui/view/Viewer"/>
+              </genDataTypes>
+            </nestedGenPackages>
+          </nestedGenPackages>
+        </nestedGenPackages>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Org" disposableProviderFactory="true">
+      <ecorePackage href="CaseStudy-gs-core.ecore#//org"/>
+      <nestedGenPackages prefix="Graphstream" disposableProviderFactory="true">
+        <ecorePackage href="CaseStudy-gs-core.ecore#//org/graphstream"/>
+        <nestedGenPackages prefix="Graph" disposableProviderFactory="true">
+          <ecorePackage href="CaseStudy-gs-core.ecore#//org/graphstream/graph"/>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/isDirected"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/isLoop"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getNode0"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getNode0/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getNode1"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getNode1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getSourceNode"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getSourceNode/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getTargetNode"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getTargetNode/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getOpposite"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getOpposite/node"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Edge/getOpposite/T"/>
+              </genTypeParameters>
+            </genOperations>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getId"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getIndex"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttribute"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttribute/key"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttribute/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getFirstAttributeOf"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getFirstAttributeOf/keys"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getFirstAttributeOf/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttribute.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttribute.1/key"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttribute.1/clazz"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttribute.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getFirstAttributeOf.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getFirstAttributeOf.1/clazz"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getFirstAttributeOf.1/keys"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getFirstAttributeOf.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getLabel"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getLabel/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getNumber"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getNumber/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getVector"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getVector/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getArray"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getArray/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getHash"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getHash/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasAttribute"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasAttribute/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasAttribute.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasAttribute.1/key"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasAttribute.1/clazz"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasLabel"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasLabel/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasNumber"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasNumber/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasVector"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasVector/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasArray"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasArray/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasHash"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/hasHash/key"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttributeKeyIterator"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getEachAttributeKey"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttributeKeySet"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/clearAttributes"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/addAttribute"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/addAttribute/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/addAttribute/values"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/changeAttribute"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/changeAttribute/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/changeAttribute/values"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/setAttribute"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/setAttribute/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/setAttribute/values"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/addAttributes"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/addAttributes/attributes"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/removeAttribute"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/removeAttribute/attribute"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Element/getAttributeCount"/>
+            </genOperations>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getNode"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getNode/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getNode/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getEdge"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getEdge/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/nodeFactory"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/edgeFactory"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/isStrict"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/isAutoCreationEnabled"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/nullAttributesAreErrors"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getStep"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setNullAttributesAreErrors"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setNullAttributesAreErrors/on"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setNodeFactory"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setNodeFactory/nf"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setEdgeFactory"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setEdgeFactory/ef"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setStrict"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setStrict/on"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setAutoCreate"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/setAutoCreate/on"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/clear"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addNode"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addNode/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addNode/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge/id"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge/node1"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge/node2"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.1/id"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.1/from"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.1/to"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.1/directed"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge/from"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge/to"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.1/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/stepBegins"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/stepBegins/time"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/attributeSinks"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/elementSinks"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/read"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/read/filename"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/read.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/read.1/input"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/read.1/filename"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/write"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/write/filename"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/write.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/write.1/output"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/write.1/filename"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/display"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/display.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/display.1/autoLayout"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getNode.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getNode.1/index"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getNode.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getEdge.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getEdge.1/index"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/getEdge.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.2/id"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.2/index1"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.2/index2"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.2/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.3"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.3/id"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.3/fromIndex"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.3/toIndex"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.3/directed"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.3/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.4"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.4/id"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.4/node1"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.4/node2"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.4/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.5"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.5/id"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.5/from"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.5/to"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.5/directed"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/addEdge.5/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.2/index"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.2/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.3"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.3/fromIndex"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.3/toIndex"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.3/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.4"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.4/node1"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.4/node2"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.4/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.5"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.5/edge"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeEdge.5/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode.1/index"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode.2/node"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Graph/removeNode.2/T"/>
+              </genTypeParameters>
+            </genOperations>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getGraph"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getDegree"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getOutDegree"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getInDegree"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeToward"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeToward/id"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeFrom"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeFrom/id"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeBetween"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeBetween/id"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween/id"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEnteringEdgeIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEnteringEdgeIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getLeavingEdgeIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getLeavingEdgeIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getNeighborNodeIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getNeighborNodeIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdge"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdge/i"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEnteringEdge"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEnteringEdge/i"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEnteringEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getLeavingEdge"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getLeavingEdge/i"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getLeavingEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getBreadthFirstIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getBreadthFirstIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getBreadthFirstIterator.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getBreadthFirstIterator.1/directed"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getBreadthFirstIterator.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getDepthFirstIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getDepthFirstIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getDepthFirstIterator.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getDepthFirstIterator.1/directed"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getDepthFirstIterator.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEachEdge"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEachEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEachLeavingEdge"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEachLeavingEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEachEnteringEdge"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEachEnteringEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeSet"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeSet/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getLeavingEdgeSet"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getLeavingEdgeSet/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEnteringEdgeSet"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEnteringEdgeSet/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/toString"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeToward.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeToward.1/node"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeToward.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeToward.2/index"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeFrom.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeFrom.1/node"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeFrom.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeFrom.2/index"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeBetween.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeBetween.1/node"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeBetween.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/hasEdgeBetween.2/index"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward.1/node"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward.2/index"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeToward.2/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom.1/node"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom.2/index"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeFrom.2/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween.1"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween.1/node"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween.1/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween.2"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween.2/index"/>
+              </genParameters>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Node/getEdgeBetween.2/T"/>
+              </genTypeParameters>
+            </genOperations>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getNodeCount"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEdgeCount"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getNodeIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getNodeIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEdgeIterator"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEdgeIterator/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEachNode"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEachNode/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEachEdge"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEachEdge/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getNodeSet"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getNodeSet/T"/>
+              </genTypeParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEdgeSet"/>
+              <genTypeParameters>
+                <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/Structure/getEdgeSet/T"/>
+              </genTypeParameters>
+            </genOperations>
+          </genClasses>
+          <nestedGenPackages prefix="Implementations" disposableProviderFactory="true">
+            <ecorePackage href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations"/>
+            <genClasses>
+              <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge"/>
+              <genFeatures notify="false" createChild="false" propertySortChoices="true">
+                <ecoreFeature xsi:type="ecore:EReference" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/source"/>
+              </genFeatures>
+              <genFeatures notify="false" createChild="false" propertySortChoices="true">
+                <ecoreFeature xsi:type="ecore:EReference" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/target"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/directed"/>
+              </genFeatures>
+              <genFeatures notify="false" createChild="false" propertySortChoices="true">
+                <ecoreFeature xsi:type="ecore:EReference" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/graph"/>
+              </genFeatures>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/toString"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getNode0"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getNode0/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getNode1"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getNode1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getOpposite"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getOpposite/node"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getOpposite/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getSourceNode"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getSourceNode/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getTargetNode"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/getTargetNode/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractEdge/isLoop"/>
+              </genOperations>
+            </genClasses>
+            <genClasses image="false">
+              <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement"/>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/id"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/index"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/attributes"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/attributesBeingRemoved"/>
+              </genFeatures>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttribute"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttribute/key"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttribute/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf/keys"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttribute.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttribute.1/key"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttribute.1/clazz"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttribute.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf.1/clazz"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf.1/keys"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getLabel"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getLabel/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getNumber"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getNumber/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getVector"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getVector/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getArray"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getArray/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getHash"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getHash/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasAttribute"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasAttribute/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasAttribute.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasAttribute.1/key"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasAttribute.1/clazz"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasLabel"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasLabel/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasNumber"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasNumber/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasVector"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasVector/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasArray"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasArray/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasHash"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/hasHash/key"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttributeKeyIterator"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getEachAttributeKey"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttributeKeySet"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/toString"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/getAttributeCount"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/clearAttributes"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/addAttribute"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/addAttribute/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/addAttribute/values"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/changeAttribute"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/changeAttribute/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/changeAttribute/values"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/setAttribute"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/setAttribute/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/setAttribute/values"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/addAttributes"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/addAttributes/attributes"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/removeAttribute"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractElement/removeAttribute/attribute"/>
+                </genParameters>
+              </genOperations>
+            </genClasses>
+            <genClasses image="false">
+              <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph"/>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/strictChecking"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/autoCreate"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeFactory.1"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeFactory.1"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/step"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nullAttributesAreErrors.1"/>
+              </genFeatures>
+              <genFeatures createChild="false">
+                <ecoreFeature xsi:type="ecore:EAttribute" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/replayId"/>
+              </genFeatures>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nullAttributesAreErrors"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNode"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNode/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNode/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNode.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNode.1/index"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNode.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdge/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdge.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdge.1/index"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdge.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNodeCount"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdgeCount"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNodeIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNodeIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdgeIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdgeIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEachNode"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEachNode/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEachEdge"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEachEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNodeSet"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getNodeSet/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdgeSet"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getEdgeSet/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/iterator"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeFactory"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeFactory"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/isStrict"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/isAutoCreationEnabled"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/setStrict"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/setStrict/on"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/stepBegins"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/stepBegins/time"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/clear"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addNode"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addNode/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addNode/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge/id"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge/node1"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge/node2"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.1/id"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.1/from"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.1/to"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.1/directed"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.2/id"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.2/index1"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.2/index2"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.2/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.3"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.3/id"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.3/fromIndex"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.3/toIndex"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.3/directed"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.3/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.4"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.4/id"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.4/node1"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.4/node2"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.4/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.5"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.5/id"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.5/from"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.5/to"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.5/directed"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addEdge.5/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode.1/index"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode.2/node"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeNode.2/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.1/index"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.2/edge"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.2/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.3"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.3/from"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.3/to"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.3/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.4"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.4/fromIndex"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.4/toIndex"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.4/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.5"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.5/node1"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.5/node2"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeEdge.5/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/attributeSinks"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/elementSinks"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addAttributeSink"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addAttributeSink/sink"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addElementSink"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addElementSink/sink"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addSink"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/addSink/sink"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/clearAttributeSinks"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/clearElementSinks"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/clearSinks"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeAttributeSink"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeAttributeSink/sink"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeElementSink"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeElementSink/sink"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeSink"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/removeSink/sink"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeAdded"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeAdded/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeAdded/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeAdded/edgeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeAdded/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeAdded/value"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeChanged"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeChanged/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeChanged/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeChanged/edgeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeChanged/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeChanged/oldValue"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeChanged/newValue"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeRemoved"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeRemoved/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeRemoved/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeRemoved/edgeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAttributeRemoved/attribute"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeAdded"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeAdded/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeAdded/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeAdded/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeAdded/value"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeChanged"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeChanged/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeChanged/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeChanged/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeChanged/oldValue"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeChanged/newValue"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeRemoved"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeRemoved/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeRemoved/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphAttributeRemoved/attribute"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeAdded"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeAdded/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeAdded/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeAdded/nodeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeAdded/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeAdded/value"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeChanged"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeChanged/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeChanged/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeChanged/nodeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeChanged/attribute"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeChanged/oldValue"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeChanged/newValue"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeRemoved"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeRemoved/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeRemoved/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeRemoved/nodeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAttributeRemoved/attribute"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAdded"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAdded/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAdded/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAdded/edgeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAdded/fromNodeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAdded/toNodeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeAdded/directed"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeRemoved"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeRemoved/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeRemoved/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/edgeRemoved/edgeId"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphCleared"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphCleared/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/graphCleared/timeId"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAdded"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAdded/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAdded/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeAdded/nodeId"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeRemoved"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeRemoved/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeRemoved/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/nodeRemoved/nodeId"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/stepBegins.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/stepBegins.1/sourceId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/stepBegins.1/timeId"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/stepBegins.1/step"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/display"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/display.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/display.1/autoLayout"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/read"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/read/input"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/read/filename"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/read.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/read.1/filename"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/write"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/write/output"/>
+                </genParameters>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/write/filename"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/write.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/write.1/filename"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractGraph/getReplayController"/>
+              </genOperations>
+            </genClasses>
+            <genClasses image="false">
+              <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode"/>
+              <genFeatures notify="false" createChild="false" propertySortChoices="true">
+                <ecoreFeature xsi:type="ecore:EReference" href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/graph"/>
+              </genFeatures>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getDegree"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getInDegree"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getOutDegree"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeToward"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeToward/node"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeToward.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeToward.1/index"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeToward.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeToward.2/id"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeFrom"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeFrom/node"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeFrom.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeFrom.1/index"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeFrom.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeFrom.2/id"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeBetween"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeBetween/node"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeBetween.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeBetween.1/index"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeBetween.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/hasEdgeBetween.2/id"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward/node"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.1/index"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.2/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.2/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom/node"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.1/index"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.2/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.2/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween/node"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.1/index"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.2"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.2/id"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.2/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEnteringEdgeIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEnteringEdgeIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getLeavingEdgeIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getLeavingEdgeIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEachEdge"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEachEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEachEnteringEdge"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEachEnteringEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEachLeavingEdge"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEachLeavingEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeSet"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdgeSet/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEnteringEdgeSet"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEnteringEdgeSet/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getLeavingEdgeSet"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getLeavingEdgeSet/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/iterator"/>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdge/i"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEnteringEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEnteringEdge/i"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getEnteringEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getLeavingEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getLeavingEdge/i"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getLeavingEdge/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getNeighborNodeIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getNeighborNodeIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getBreadthFirstIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getBreadthFirstIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getBreadthFirstIterator.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getBreadthFirstIterator.1/directed"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getBreadthFirstIterator.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getDepthFirstIterator"/>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getDepthFirstIterator/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getDepthFirstIterator.1"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getDepthFirstIterator.1/directed"/>
+                </genParameters>
+                <genTypeParameters>
+                  <ecoreTypeParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/getDepthFirstIterator.1/T"/>
+                </genTypeParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/isEnteringEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/isEnteringEdge/e"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/isLeavingEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/isLeavingEdge/e"/>
+                </genParameters>
+              </genOperations>
+              <genOperations>
+                <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/isIncidentEdge"/>
+                <genParameters>
+                  <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/graph/implementations/AbstractNode/isIncidentEdge/e"/>
+                </genParameters>
+              </genOperations>
+            </genClasses>
+          </nestedGenPackages>
+        </nestedGenPackages>
+        <nestedGenPackages prefix="Stream" disposableProviderFactory="true">
+          <ecorePackage href="CaseStudy-gs-core.ecore#//org/graphstream/stream"/>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeAdded"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeAdded/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeAdded/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeAdded/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeAdded/value"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeChanged"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeChanged/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeChanged/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeChanged/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeChanged/oldValue"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeChanged/newValue"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeRemoved"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeRemoved/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeRemoved/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/graphAttributeRemoved/attribute"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeAdded"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeAdded/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeAdded/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeAdded/nodeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeAdded/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeAdded/value"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeChanged"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeChanged/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeChanged/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeChanged/nodeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeChanged/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeChanged/oldValue"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeChanged/newValue"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeRemoved"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeRemoved/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeRemoved/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeRemoved/nodeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/nodeAttributeRemoved/attribute"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeAdded"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeAdded/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeAdded/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeAdded/edgeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeAdded/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeAdded/value"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeChanged"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeChanged/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeChanged/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeChanged/edgeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeChanged/attribute"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeChanged/oldValue"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeChanged/newValue"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeRemoved"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeRemoved/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeRemoved/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeRemoved/edgeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/AttributeSink/edgeAttributeRemoved/attribute"/>
+              </genParameters>
+            </genOperations>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeAdded"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeAdded/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeAdded/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeAdded/nodeId"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeRemoved"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeRemoved/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeRemoved/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/nodeRemoved/nodeId"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeAdded"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeAdded/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeAdded/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeAdded/edgeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeAdded/fromNodeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeAdded/toNodeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeAdded/directed"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeRemoved"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeRemoved/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeRemoved/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/edgeRemoved/edgeId"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/graphCleared"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/graphCleared/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/graphCleared/timeId"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/stepBegins"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/stepBegins/sourceId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/stepBegins/timeId"/>
+              </genParameters>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/ElementSink/stepBegins/step"/>
+              </genParameters>
+            </genOperations>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Pipe"/>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Replayable"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Replayable/getReplayController"/>
+            </genOperations>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Sink"/>
+          </genClasses>
+          <genClasses image="false">
+            <ecoreClass href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source"/>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/addSink"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/addSink/sink"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/removeSink"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/removeSink/sink"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/addAttributeSink"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/addAttributeSink/sink"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/removeAttributeSink"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/removeAttributeSink/sink"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/addElementSink"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/addElementSink/sink"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/removeElementSink"/>
+              <genParameters>
+                <ecoreParameter href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/removeElementSink/sink"/>
+              </genParameters>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/clearElementSinks"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/clearAttributeSinks"/>
+            </genOperations>
+            <genOperations>
+              <ecoreOperation href="CaseStudy-gs-core.ecore#//org/graphstream/stream/Source/clearSinks"/>
+            </genOperations>
+          </genClasses>
+        </nestedGenPackages>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

@@ -31,6 +31,18 @@
  */
 package org.graphstream.ui.graphicGraph;
 
+import java.io.IOException;
+import java.util.AbstractCollection;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.EdgeFactory;
 import org.graphstream.graph.Element;
@@ -55,18 +67,6 @@ import org.graphstream.ui.graphicGraph.stylesheet.Value;
 import org.graphstream.ui.graphicGraph.stylesheet.Values;
 import org.graphstream.ui.view.Viewer;
 import org.graphstream.util.GraphListeners;
-
-import java.io.IOException;
-import java.util.AbstractCollection;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Graph representation used in display classes.
@@ -1414,17 +1414,17 @@ public class GraphicGraph extends AbstractElement implements Graph,
 
 		if (getAttributeKeySet() != null)
 			for (String key : getAttributeKeySet()) {
-				listeners.sendGraphAttributeAdded(id, key, getAttribute(key));
+				listeners.sendGraphAttributeAdded(getId(), key, getAttribute(key));
 			}
 
 		// Replay all nodes and their attributes.
 
 		for (Node node : this) {
-			listeners.sendNodeAdded(id, node.getId());
+			listeners.sendNodeAdded(getId(), node.getId());
 
 			if (node.getAttributeKeySet() != null) {
 				for (String key : node.getAttributeKeySet()) {
-					listeners.sendNodeAttributeAdded(id, node.getId(), key,
+					listeners.sendNodeAttributeAdded(getId(), node.getId(), key,
 							node.getAttribute(key));
 				}
 			}
@@ -1433,12 +1433,12 @@ public class GraphicGraph extends AbstractElement implements Graph,
 		// Replay all edges and their attributes.
 
 		for (Edge edge : getEachEdge()) {
-			listeners.sendEdgeAdded(id, edge.getId(), edge.getSourceNode()
+			listeners.sendEdgeAdded(getId(), edge.getId(), edge.getSourceNode()
 					.getId(), edge.getTargetNode().getId(), edge.isDirected());
 
 			if (edge.getAttributeKeySet() != null) {
 				for (String key : edge.getAttributeKeySet()) {
-					listeners.sendEdgeAttributeAdded(id, edge.getId(), key,
+					listeners.sendEdgeAttributeAdded(getId(), edge.getId(), key,
 							edge.getAttribute(key));
 				}
 			}

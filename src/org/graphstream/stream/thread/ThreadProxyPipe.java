@@ -31,6 +31,12 @@
  */
 package org.graphstream.stream.thread;
 
+import java.util.LinkedList;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Logger;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.stream.ProxyPipe;
 import org.graphstream.stream.Replayable;
@@ -38,12 +44,6 @@ import org.graphstream.stream.Replayable.Controller;
 import org.graphstream.stream.Sink;
 import org.graphstream.stream.Source;
 import org.graphstream.stream.SourceBase;
-
-import java.util.LinkedList;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.ReentrantLock;
-import java.util.logging.Logger;
 
 /**
  * Filter that allows to pass graph events between two threads without explicit

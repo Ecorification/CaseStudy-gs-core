@@ -31,8 +31,6 @@
  */
 package org.graphstream.stream;
 
-import org.graphstream.stream.SourceBase.ElementType;
-
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -41,6 +39,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.EnumMap;
 import java.util.HashMap;
+
+import org.graphstream.stream.SourceBase.ElementType;
 
 /**
  * A sink easily allowing a bind between attribute modifications and method

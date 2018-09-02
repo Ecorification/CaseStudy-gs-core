@@ -31,14 +31,19 @@
  */
 package org.graphstream.stream.netstream;
 
-import org.graphstream.stream.binary.ByteDecoder;
-import org.graphstream.stream.SourceBase;
-
-import static org.graphstream.stream.netstream.NetStreamUtils.*;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeBoolean;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeDouble;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeString;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeType;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeUnsignedVarint;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeValue;
 
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.util.logging.Logger;
+
+import org.graphstream.stream.SourceBase;
+import org.graphstream.stream.binary.ByteDecoder;
 
 /**
  * @since 22/01/16.

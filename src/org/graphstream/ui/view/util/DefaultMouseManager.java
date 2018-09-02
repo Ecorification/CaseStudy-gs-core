@@ -31,16 +31,15 @@
  */
 package org.graphstream.ui.view.util;
 
+import java.awt.event.MouseEvent;
+import java.util.EnumSet;
+
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.Node;
 import org.graphstream.ui.graphicGraph.GraphicElement;
 import org.graphstream.ui.graphicGraph.GraphicGraph;
-import org.graphstream.ui.graphicGraph.GraphicNode;
 import org.graphstream.ui.graphicGraph.GraphicSprite;
 import org.graphstream.ui.view.View;
-
-import java.awt.event.MouseEvent;
-import java.util.EnumSet;
 
 public class DefaultMouseManager implements MouseManager
 {

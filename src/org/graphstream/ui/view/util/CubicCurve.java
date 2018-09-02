@@ -31,8 +31,11 @@
  */
 package org.graphstream.ui.view.util;
 
-import org.graphstream.ui.geom.*;
-import java.awt.geom.*;
+import java.awt.geom.Point2D;
+
+import org.graphstream.ui.geom.Point2;
+import org.graphstream.ui.geom.Point3;
+import org.graphstream.ui.geom.Vector2;
 
 /** Utility methods to deal with cubic Bézier curves. */
 public class CubicCurve {

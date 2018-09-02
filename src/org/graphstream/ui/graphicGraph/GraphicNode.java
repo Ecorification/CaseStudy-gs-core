@@ -31,12 +31,7 @@
  */
 package org.graphstream.ui.graphicGraph;
 
-import org.graphstream.graph.Edge;
-import org.graphstream.graph.Graph;
-import org.graphstream.graph.Node;
-import org.graphstream.stream.SourceBase.ElementType;
-import org.graphstream.ui.geom.Point3;
-import org.graphstream.ui.graphicGraph.stylesheet.Selector;
+import static org.graphstream.ui.graphicGraph.GraphPosLengthUtils.nodePosition;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -44,7 +39,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-import static org.graphstream.ui.graphicGraph.GraphPosLengthUtils.nodePosition;
+import org.graphstream.graph.Edge;
+import org.graphstream.graph.Graph;
+import org.graphstream.graph.Node;
+import org.graphstream.stream.SourceBase.ElementType;
+import org.graphstream.ui.geom.Point3;
+import org.graphstream.ui.graphicGraph.stylesheet.Selector;
 
 /**
  * Graphical node.

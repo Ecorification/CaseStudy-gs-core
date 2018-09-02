@@ -31,9 +31,9 @@
  */
 package org.graphstream.stream.binary;
 
-import org.graphstream.stream.Source;
-
 import java.nio.ByteBuffer;
+
+import org.graphstream.stream.Source;
 
 /**
  * Decode an event that has been encoded into a binary buffer and dispatch this event to its sources.

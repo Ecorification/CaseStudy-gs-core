@@ -31,12 +31,12 @@
  */
 package org.graphstream.ui.view;
 
+import java.util.Collection;
+import java.util.EnumSet;
+
 import org.graphstream.ui.graphicGraph.GraphicElement;
 import org.graphstream.ui.graphicGraph.GraphicGraph;
 import org.graphstream.ui.view.util.InteractiveElement;
-
-import java.util.Collection;
-import java.util.EnumSet;
 
 /**
  * Interface for classes that draw a GraphicGraph in a swing component.

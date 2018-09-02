@@ -31,7 +31,6 @@
  */
 package org.graphstream.ui.swingViewer.util;
 
-import javax.imageio.ImageIO;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -43,6 +42,8 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.imageio.ImageIO;
 
 /**
  * A simple cache for images to avoid reloading them constantly and to allow
