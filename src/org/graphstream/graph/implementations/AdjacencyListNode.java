@@ -260,7 +260,7 @@ public class AdjacencyListNode extends AbstractNode {
 				throw new IllegalStateException();
 			AbstractEdge e = edges[iPrev];
 			// do not call the callback because we already know the index
-			graph.removeEdge(e, true, e.source != AdjacencyListNode.this,
+			((AbstractGraph)graph).removeEdge(e, true, e.source != AdjacencyListNode.this,
 					e.target != AdjacencyListNode.this);
 			removeEdge(iPrev);
 			iNext = iPrev;

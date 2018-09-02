@@ -68,7 +68,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	/**
 	 * The graph to which this node belongs
 	 */
-	protected AbstractGraph graph;
+	protected Graph graph;
 
 	// *** Constructors
 
@@ -91,7 +91,7 @@ public abstract class AbstractNode extends AbstractElement implements Node {
 	@Override
 	protected void attributeChanged(AttributeChangeEvent event,
 			String attribute, Object oldValue, Object newValue) {
-		graph.listeners.sendAttributeChangedEvent(id,
+		((AbstractGraph)graph).listeners.sendAttributeChangedEvent(id,
 				SourceBase.ElementType.NODE, attribute, event, oldValue,
 				newValue);
 	}
