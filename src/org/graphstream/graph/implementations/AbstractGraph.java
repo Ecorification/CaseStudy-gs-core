@@ -88,7 +88,8 @@ public abstract class AbstractGraph extends unification.org.graphstream.graph.im
 	// *** Fields ***
 
 	private GraphListeners listeners;
-	
+
+	private long replayId = 0;
 
 	// *** Constructors ***
 
