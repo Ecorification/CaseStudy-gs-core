@@ -31,11 +31,10 @@
  */
 package org.graphstream.stream.sync;
 
-import org.graphstream.stream.sync.SinkTime;
-import org.graphstream.stream.sync.SourceTime;
-import org.junit.Test;
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
 
 public class TestSync {
 	/**

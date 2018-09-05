@@ -31,10 +31,9 @@
  */
 package org.graphstream.stream.file.pajek;
 
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
-
 import java.util.ArrayList;
 
 import org.graphstream.stream.file.FileSourcePajek;
@@ -42,7 +41,6 @@ import org.graphstream.util.parser.ParseException;
 import org.graphstream.util.parser.Parser;
 import org.graphstream.util.parser.SimpleCharStream;
 import org.graphstream.util.parser.Token;
-import org.graphstream.util.parser.TokenMgrError;
 
 @SuppressWarnings("unused")
 public class PajekParser implements Parser, PajekParserConstants {

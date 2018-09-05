@@ -31,6 +31,12 @@
  */
 package org.graphstream.stream.test;
 
+import static org.junit.Assert.assertEquals;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.LinkedList;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.implementations.AdjacencyListGraph;
 import org.graphstream.stream.Sink;
@@ -38,12 +44,6 @@ import org.graphstream.stream.SinkAdapter;
 import org.graphstream.stream.file.FileSource;
 import org.graphstream.stream.file.FileSourceDGS;
 import org.junit.Test;
-
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.LinkedList;
-
-import static org.junit.Assert.assertEquals;
 
 /**
  * Test the ability of Graphs to insert events in between actual streams. Two cases are envisioned.

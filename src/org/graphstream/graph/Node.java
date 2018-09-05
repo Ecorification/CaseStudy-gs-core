@@ -46,7 +46,7 @@ import java.util.Iterator;
  * 
  * @since July 12 2007
  */
-public interface Node extends Element, Iterable<Edge> {
+public interface Node extends Element, Iterable<Edge>, ecore.org.graphstream.graph.Node {
 	/**
 	 * Parent graph. Some elements are not able to give their parent graph.
 	 * 

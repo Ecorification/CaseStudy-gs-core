@@ -31,17 +31,18 @@
  */
 package org.graphstream.stream.netstream.test;
 
-import org.graphstream.stream.binary.ByteEncoder;
-import org.graphstream.stream.netstream.NetStreamConstants;
-import org.graphstream.stream.netstream.NetStreamEncoder;
-
-import static org.graphstream.stream.netstream.NetStreamUtils.*;
-
-import org.junit.Assert;
-import org.junit.Test;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeString;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeUnsignedVarint;
+import static org.graphstream.stream.netstream.NetStreamUtils.getVarintSize;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
+
+import org.graphstream.stream.binary.ByteEncoder;
+import org.graphstream.stream.netstream.NetStreamConstants;
+import org.graphstream.stream.netstream.NetStreamEncoder;
+import org.junit.Assert;
+import org.junit.Test;
 
 /**
  * @since 22/01/16.

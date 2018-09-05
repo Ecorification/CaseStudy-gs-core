@@ -31,12 +31,12 @@
  */
 package org.graphstream.ui.view.util;
 
-import org.graphstream.ui.graphicGraph.GraphicElement;
-
 import java.awt.event.MouseEvent;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.locks.ReentrantLock;
+
+import org.graphstream.ui.graphicGraph.GraphicElement;
 
 public class MouseOverMouseManager extends DefaultMouseManager {
 

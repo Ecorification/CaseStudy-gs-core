@@ -39,7 +39,7 @@ package org.graphstream.stream;
  * removed, and each time its value is changed.
  * </p>
  */
-public interface AttributeSink {
+public interface AttributeSink extends ecore.org.graphstream.stream.AttributeSink {
 	/**
 	 * A graph attribute was added.
 	 * 

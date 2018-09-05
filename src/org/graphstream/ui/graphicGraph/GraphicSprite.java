@@ -31,14 +31,14 @@
  */
 package org.graphstream.ui.graphicGraph;
 
+import java.util.Iterator;
+
 import org.graphstream.graph.Node;
 import org.graphstream.stream.SourceBase.ElementType;
 import org.graphstream.ui.graphicGraph.stylesheet.Selector;
 import org.graphstream.ui.graphicGraph.stylesheet.Style;
 import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
 import org.graphstream.ui.graphicGraph.stylesheet.Values;
-
-import java.util.Iterator;
 
 /**
  * A small gentle sprite.

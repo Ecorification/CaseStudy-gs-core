@@ -31,9 +31,9 @@
  */
 package org.graphstream.stream.binary;
 
-import org.graphstream.stream.Sink;
-
 import java.nio.ByteBuffer;
+
+import org.graphstream.stream.Sink;
 
 /**
  * Define an encoder that transform received events into a binary buffer.

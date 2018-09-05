@@ -31,24 +31,6 @@
  */
 package org.graphstream.ui.swingViewer.basicRenderer;
 
-import org.graphstream.graph.Element;
-import org.graphstream.ui.geom.Point3;
-import org.graphstream.ui.graphicGraph.GraphicElement;
-import org.graphstream.ui.graphicGraph.GraphicGraph;
-import org.graphstream.ui.graphicGraph.StyleGroup;
-import org.graphstream.ui.graphicGraph.StyleGroupSet;
-import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
-import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants.FillMode;
-import org.graphstream.ui.graphicGraph.stylesheet.Value;
-import org.graphstream.ui.swingViewer.SwingGraphRendererBase;
-import org.graphstream.ui.swingViewer.util.DefaultCamera;
-import org.graphstream.ui.swingViewer.util.GraphMetrics;
-import org.graphstream.ui.swingViewer.util.Graphics2DOutput;
-import org.graphstream.ui.view.Camera;
-import org.graphstream.ui.view.LayerRenderer;
-import org.graphstream.ui.view.util.InteractiveElement;
-
-import javax.imageio.ImageIO;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Container;
@@ -66,6 +48,25 @@ import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.imageio.ImageIO;
+
+import org.graphstream.graph.Element;
+import org.graphstream.ui.geom.Point3;
+import org.graphstream.ui.graphicGraph.GraphicElement;
+import org.graphstream.ui.graphicGraph.GraphicGraph;
+import org.graphstream.ui.graphicGraph.StyleGroup;
+import org.graphstream.ui.graphicGraph.StyleGroupSet;
+import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
+import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants.FillMode;
+import org.graphstream.ui.graphicGraph.stylesheet.Value;
+import org.graphstream.ui.swingViewer.SwingGraphRendererBase;
+import org.graphstream.ui.swingViewer.util.DefaultCamera;
+import org.graphstream.ui.swingViewer.util.GraphMetrics;
+import org.graphstream.ui.swingViewer.util.Graphics2DOutput;
+import org.graphstream.ui.view.Camera;
+import org.graphstream.ui.view.LayerRenderer;
+import org.graphstream.ui.view.util.InteractiveElement;
 
 /**
  * A very simple view of the graph that respect only a subset of CSS.

@@ -31,14 +31,18 @@
  */
 package org.graphstream.stream.netstream;
 
-import org.graphstream.stream.binary.ByteEncoder;
-
-import static org.graphstream.stream.netstream.NetStreamUtils.*;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeString;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeUnsignedVarint;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeValue;
+import static org.graphstream.stream.netstream.NetStreamUtils.getType;
+import static org.graphstream.stream.netstream.NetStreamUtils.getVarintSize;
 
 import java.nio.ByteBuffer;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Logger;
+
+import org.graphstream.stream.binary.ByteEncoder;
 
 /**
  * @since 22/01/16.

@@ -31,6 +31,8 @@
  */
 package org.graphstream.ui.graphicGraph;
 
+import java.util.logging.Logger;
+
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
@@ -38,8 +40,6 @@ import org.graphstream.ui.geom.Point2;
 import org.graphstream.ui.geom.Point3;
 import org.graphstream.ui.geom.Vector2;
 import org.graphstream.ui.geom.Vector3;
-
-import java.util.logging.Logger;
 
 /**
  * Lots of small often used measuring algorithms on graphs.

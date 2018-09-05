@@ -31,13 +31,13 @@
  */
 package org.graphstream.stream.netstream.test;
 
+import java.io.IOException;
+import java.net.InetAddress;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.implementations.DefaultGraph;
 import org.graphstream.stream.binary.ByteProxy;
 import org.graphstream.stream.netstream.NetStreamUtils;
-
-import java.io.IOException;
-import java.net.InetAddress;
 
 /**
  * @since 01/02/16.

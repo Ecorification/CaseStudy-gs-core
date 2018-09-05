@@ -31,14 +31,14 @@
  */
 package org.graphstream.stream.netstream.test;
 
+import java.nio.ByteBuffer;
+
 import org.graphstream.stream.Sink;
 import org.graphstream.stream.binary.ByteEncoder;
 import org.graphstream.stream.netstream.NetStreamDecoder;
 import org.graphstream.stream.netstream.NetStreamEncoder;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.nio.ByteBuffer;
 
 /**
  * @since 01/02/16.

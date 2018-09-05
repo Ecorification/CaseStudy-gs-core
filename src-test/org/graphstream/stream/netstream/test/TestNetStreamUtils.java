@@ -31,14 +31,28 @@
  */
 package org.graphstream.stream.netstream.test;
 
-import static org.graphstream.stream.netstream.NetStreamUtils.*;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeBoolean;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeByte;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeDouble;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeFloat;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeInt;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeLong;
+import static org.graphstream.stream.netstream.NetStreamUtils.decodeShort;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeBoolean;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeByte;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeDouble;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeFloat;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeInt;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeLong;
+import static org.graphstream.stream.netstream.NetStreamUtils.encodeShort;
+import static org.graphstream.stream.netstream.NetStreamUtils.getType;
+
+import java.nio.ByteBuffer;
 
 import org.graphstream.stream.netstream.NetStreamConstants;
 import org.graphstream.stream.netstream.NetStreamUtils;
 import org.junit.Assert;
 import org.junit.Test;
-
-import java.nio.ByteBuffer;
 
 /**
  * @since 23/01/16.

@@ -31,15 +31,6 @@
  */
 package org.graphstream.ui.swingViewer;
 
-import org.graphstream.ui.graphicGraph.GraphicElement;
-import org.graphstream.ui.graphicGraph.GraphicGraph;
-import org.graphstream.ui.view.Viewer;
-import org.graphstream.ui.view.Camera;
-import org.graphstream.ui.view.GraphRenderer;
-import org.graphstream.ui.view.LayerRenderer;
-import org.graphstream.ui.view.util.*;
-
-import javax.swing.JFrame;
 import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -49,6 +40,20 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.Collection;
 import java.util.EnumSet;
+
+import javax.swing.JFrame;
+
+import org.graphstream.ui.graphicGraph.GraphicElement;
+import org.graphstream.ui.graphicGraph.GraphicGraph;
+import org.graphstream.ui.view.Camera;
+import org.graphstream.ui.view.GraphRenderer;
+import org.graphstream.ui.view.LayerRenderer;
+import org.graphstream.ui.view.Viewer;
+import org.graphstream.ui.view.util.DefaultMouseManager;
+import org.graphstream.ui.view.util.DefaultShortcutManager;
+import org.graphstream.ui.view.util.InteractiveElement;
+import org.graphstream.ui.view.util.MouseManager;
+import org.graphstream.ui.view.util.ShortcutManager;
 
 /**
  * Base for constructing views.

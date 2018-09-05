@@ -40,7 +40,7 @@ package org.graphstream.graph;
  * 
  * @since July 12 2007
  */
-public interface Edge extends Element {
+public interface Edge extends Element, ecore.org.graphstream.graph.Edge {
 	/**
 	 * Is the edge directed ?.
 	 * 

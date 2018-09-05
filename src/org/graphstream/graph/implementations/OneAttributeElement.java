@@ -31,11 +31,11 @@
  */
 package org.graphstream.graph.implementations;
 
-import org.graphstream.graph.Element;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
+
+import org.graphstream.graph.Element;
 
 /**
  * An implementation of an {@link org.graphstream.graph.Element}.

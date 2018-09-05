@@ -33,8 +33,8 @@ package org.graphstream.util;
 
 import java.util.Iterator;
 
-import org.graphstream.graph.Graph;
 import org.graphstream.graph.Edge;
+import org.graphstream.graph.Graph;
 
 public class FilteredEdgeIterator<T extends Edge> implements Iterator<T> {
 

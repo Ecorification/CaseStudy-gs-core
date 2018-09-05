@@ -31,14 +31,14 @@
  */
 package org.graphstream.stream.binary.test;
 
+import java.nio.ByteBuffer;
+
 import org.graphstream.graph.implementations.DefaultGraph;
 import org.graphstream.stream.SourceBase;
 import org.graphstream.stream.binary.ByteDecoder;
 import org.graphstream.stream.binary.ByteEncoder;
 import org.graphstream.stream.binary.ByteFactory;
 import org.graphstream.stream.binary.ByteProxy;
-
-import java.nio.ByteBuffer;
 
 /**
  * @since 01/02/16.

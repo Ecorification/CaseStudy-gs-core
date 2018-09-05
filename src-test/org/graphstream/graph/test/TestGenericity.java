@@ -31,6 +31,10 @@
  */
 package org.graphstream.graph.test;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.fail;
+
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -49,7 +53,6 @@ import org.graphstream.graph.implementations.MultiNode;
 import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.graph.implementations.SingleNode;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 
 public class TestGenericity {

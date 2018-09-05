@@ -31,17 +31,15 @@
  */
 package org.graphstream.stream.file.gml;
 
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
 
 import org.graphstream.stream.file.FileSourceGML;
-
 import org.graphstream.util.parser.ParseException;
 import org.graphstream.util.parser.Parser;
 import org.graphstream.util.parser.SimpleCharStream;
 import org.graphstream.util.parser.Token;
-import org.graphstream.util.parser.TokenMgrError;
 
 @SuppressWarnings("unused")
 public class GMLParser implements Parser, GMLParserConstants {

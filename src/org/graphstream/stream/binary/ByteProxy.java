@@ -31,22 +31,29 @@
  */
 package org.graphstream.stream.binary;
 
-import org.graphstream.stream.Pipe;
-import org.graphstream.stream.Sink;
-import org.graphstream.stream.SourceBase;
-import org.graphstream.stream.Replayable;
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
-import java.nio.channels.*;
+import java.nio.channels.Channel;
+import java.nio.channels.NotYetConnectedException;
+import java.nio.channels.SelectableChannel;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.ServerSocketChannel;
+import java.nio.channels.SocketChannel;
+import java.nio.channels.WritableByteChannel;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.logging.Logger;
+
+import org.graphstream.stream.Pipe;
+import org.graphstream.stream.Replayable;
+import org.graphstream.stream.Sink;
+import org.graphstream.stream.SourceBase;
 
 /**
  * This class is a proxy that can exchange event binary-encoded (opposed to text-encoder) with another proxy.

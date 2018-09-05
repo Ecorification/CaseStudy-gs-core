@@ -50,7 +50,7 @@ package org.graphstream.stream;
  * replay.replay();
  * </pre>
  */
-public interface Replayable {
+public interface Replayable extends ecore.org.graphstream.stream.Replayable {
 	/**
 	 * Get a controller to replay the graph.
 	 * 

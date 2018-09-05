@@ -31,17 +31,17 @@
  */
 package org.graphstream.ui.view;
 
-import org.graphstream.ui.graphicGraph.GraphicElement;
-import org.graphstream.ui.graphicGraph.GraphicGraph;
-import org.graphstream.ui.view.util.InteractiveElement;
-import org.graphstream.ui.view.util.MouseManager;
-import org.graphstream.ui.view.util.ShortcutManager;
-
 import java.awt.event.KeyListener;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.util.Collection;
 import java.util.EnumSet;
+
+import org.graphstream.ui.graphicGraph.GraphicElement;
+import org.graphstream.ui.graphicGraph.GraphicGraph;
+import org.graphstream.ui.view.util.InteractiveElement;
+import org.graphstream.ui.view.util.MouseManager;
+import org.graphstream.ui.view.util.ShortcutManager;
 
 /**
  * A view on a graphic graph.

@@ -40,7 +40,7 @@ package org.graphstream.stream;
  * "steps" that introduce the notion of time in graphs.
  * </p>
  */
-public interface ElementSink {
+public interface ElementSink extends ecore.org.graphstream.stream.ElementSink {
 	/**
 	 * A node was inserted in the given graph.
 	 * 

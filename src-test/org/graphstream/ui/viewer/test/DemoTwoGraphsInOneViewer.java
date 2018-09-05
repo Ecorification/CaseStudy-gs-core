@@ -33,10 +33,10 @@ package org.graphstream.ui.viewer.test;
 
 import java.io.IOException;
 
-import org.graphstream.graph.*;
-import org.graphstream.graph.implementations.*;
+import org.graphstream.graph.Graph;
+import org.graphstream.graph.implementations.MultiGraph;
 import org.graphstream.stream.file.FileSourceDGS;
-import org.graphstream.stream.thread.*;
+import org.graphstream.stream.thread.ThreadProxyPipe;
 import org.graphstream.ui.view.Viewer;
 
 public class DemoTwoGraphsInOneViewer {

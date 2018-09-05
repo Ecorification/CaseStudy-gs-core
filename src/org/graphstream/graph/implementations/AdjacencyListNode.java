@@ -75,9 +75,9 @@ public class AdjacencyListNode extends AbstractNode {
 	// *** Helpers ***
 
 	protected char edgeType(AbstractEdge e) {
-		if (!e.directed || e.source == e.target)
+		if (!e.isDirected() || e.getSource() == e.getTarget())
 			return IO_EDGE;
-		return e.source == this ? O_EDGE : I_EDGE;
+		return e.getSource() == this ? O_EDGE : I_EDGE;
 	}
 
 	@SuppressWarnings("unchecked")
@@ -260,8 +260,8 @@ public class AdjacencyListNode extends AbstractNode {
 				throw new IllegalStateException();
 			AbstractEdge e = edges[iPrev];
 			// do not call the callback because we already know the index
-			((AbstractGraph)graph).removeEdge(e, true, e.source != AdjacencyListNode.this,
-					e.target != AdjacencyListNode.this);
+			((AbstractGraph)getGraph()).removeEdge(e, true, e.getSource() != AdjacencyListNode.this,
+					e.getTarget() != AdjacencyListNode.this);
 			removeEdge(iPrev);
 			iNext = iPrev;
 			iPrev = -1;

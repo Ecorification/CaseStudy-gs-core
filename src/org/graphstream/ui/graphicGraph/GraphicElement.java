@@ -31,14 +31,14 @@
  */
 package org.graphstream.ui.graphicGraph;
 
-import org.graphstream.graph.implementations.AbstractElement;
-import org.graphstream.ui.graphicGraph.stylesheet.Selector;
-import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
-
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.graphstream.graph.implementations.AbstractElement;
+import org.graphstream.ui.graphicGraph.stylesheet.Selector;
+import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
 
 /**
  * Super class of all graphic node, edge, and sprite elements.
@@ -267,11 +267,11 @@ public abstract class GraphicElement extends AbstractElement {
 		{
 			if (attribute.charAt(0) == 'u' && attribute.charAt(1) == 'i') {
 				if (attribute.equals("ui.class")) {
-					Object o = attributes.remove("ui.class"); // Not yet removed
+					Object o = getAttributes().remove("ui.class"); // Not yet removed
 																// at
 																// this point !
 					mygraph.styleGroups.checkElementStyleGroup(this);
-					attributes.put("ui.class", o);
+					getAttributes().put("ui.class", o);
 					mygraph.graphChanged = true;
 				} else if (attribute.equals("ui.label")) {
 					label = "";

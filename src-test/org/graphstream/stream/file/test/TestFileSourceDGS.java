@@ -33,7 +33,7 @@ package org.graphstream.stream.file.test;
 
 import org.graphstream.graph.implementations.MultiGraph;
 import org.graphstream.stream.file.FileSourceDGS;
-import org.junit.*;
+import org.junit.Before;
 
 /**
  * Test the file input in DGS format.

@@ -31,12 +31,12 @@
  */
 package org.graphstream.util.cumulative;
 
+import java.util.HashMap;
+import java.util.logging.Logger;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.implementations.AdjacencyListGraph;
 import org.graphstream.stream.Sink;
-
-import java.util.HashMap;
-import java.util.logging.Logger;
 
 public class GraphSpells implements Sink {
     private static final Logger logger = Logger.getLogger(GraphSpells.class.getSimpleName());

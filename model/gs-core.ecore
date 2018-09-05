@@ -1,0 +1,2400 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ecore" nsURI="gs-core/ecore" nsPrefix="ecore">
+  <eClassifiers xsi:type="ecore:EClass" name="RootContainer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedElements" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eSubpackages name="datatypes" nsURI="gs-core/ecore.datatypes" nsPrefix="datatypes">
+    <eSubpackages name="java" nsURI="gs-core/ecore.datatypes.java" nsPrefix="java">
+      <eSubpackages name="io" nsURI="gs-core/ecore.datatypes.java.io" nsPrefix="io">
+        <eClassifiers xsi:type="ecore:EDataType" name="IOException" instanceClassName="java.io.IOException"/>
+      </eSubpackages>
+      <eSubpackages name="lang" nsURI="gs-core/ecore.datatypes.java.lang" nsPrefix="lang">
+        <eClassifiers xsi:type="ecore:EDataType" name="CharSequence" instanceClassName="java.lang.CharSequence"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="IndexOutOfBoundsException" instanceClassName="java.lang.IndexOutOfBoundsException"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="Iterable" instanceClassName="java.lang.Iterable">
+          <eTypeParameters name="T"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EDataType" name="Number" instanceClassName="java.lang.Number"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="ObjectArray" instanceClassName="java.lang.Object[]"/>
+        <eClassifiers xsi:type="ecore:EDataType" name="StringArray" instanceClassName="java.lang.String[]"/>
+      </eSubpackages>
+      <eSubpackages name="util" nsURI="gs-core/ecore.datatypes.java.util" nsPrefix="util">
+        <eClassifiers xsi:type="ecore:EDataType" name="ArrayList" instanceClassName="java.util.ArrayList">
+          <eTypeParameters name="E"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EDataType" name="Collection" instanceClassName="java.util.Collection">
+          <eTypeParameters name="E"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EDataType" name="HashMap" instanceClassName="java.util.HashMap">
+          <eTypeParameters name="K"/>
+          <eTypeParameters name="V"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EDataType" name="Iterator" instanceClassName="java.util.Iterator">
+          <eTypeParameters name="E"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EDataType" name="Map" instanceClassName="java.util.Map">
+          <eTypeParameters name="K"/>
+          <eTypeParameters name="V"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="org" nsURI="gs-core/ecore.datatypes.org" nsPrefix="org">
+      <eSubpackages name="graphstream" nsURI="gs-core/ecore.datatypes.org.graphstream" nsPrefix="graphstream">
+        <eSubpackages name="graph" nsURI="gs-core/ecore.datatypes.org.graphstream.graph" nsPrefix="graph">
+          <eClassifiers xsi:type="ecore:EDataType" name="EdgeFactory" instanceClassName="org.graphstream.graph.EdgeFactory">
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eClassifiers>
+          <eClassifiers xsi:type="ecore:EDataType" name="EdgeRejectedException" instanceClassName="org.graphstream.graph.EdgeRejectedException"/>
+          <eClassifiers xsi:type="ecore:EDataType" name="ElementNotFoundException" instanceClassName="org.graphstream.graph.ElementNotFoundException"/>
+          <eClassifiers xsi:type="ecore:EDataType" name="IdAlreadyInUseException" instanceClassName="org.graphstream.graph.IdAlreadyInUseException"/>
+          <eClassifiers xsi:type="ecore:EDataType" name="NodeFactory" instanceClassName="org.graphstream.graph.NodeFactory">
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eClassifiers>
+        </eSubpackages>
+        <eSubpackages name="stream" nsURI="gs-core/ecore.datatypes.org.graphstream.stream" nsPrefix="stream">
+          <eClassifiers xsi:type="ecore:EDataType" name="GraphParseException" instanceClassName="org.graphstream.stream.GraphParseException"/>
+          <eSubpackages name="file" nsURI="gs-core/ecore.datatypes.org.graphstream.stream.file" nsPrefix="file">
+            <eClassifiers xsi:type="ecore:EDataType" name="FileSink" instanceClassName="org.graphstream.stream.file.FileSink"/>
+            <eClassifiers xsi:type="ecore:EDataType" name="FileSource" instanceClassName="org.graphstream.stream.file.FileSource"/>
+          </eSubpackages>
+          <eSubpackages name="Replayable" nsURI="gs-core/ecore.datatypes.org.graphstream.stream.Replayable" nsPrefix="Replayable">
+            <eClassifiers xsi:type="ecore:EDataType" name="Controller" instanceClassName="org.graphstream.stream.Replayable.Controller"/>
+          </eSubpackages>
+        </eSubpackages>
+        <eSubpackages name="ui" nsURI="gs-core/ecore.datatypes.org.graphstream.ui" nsPrefix="ui">
+          <eSubpackages name="view" nsURI="gs-core/ecore.datatypes.org.graphstream.ui.view" nsPrefix="view">
+            <eClassifiers xsi:type="ecore:EDataType" name="Viewer" instanceClassName="org.graphstream.ui.view.Viewer"/>
+          </eSubpackages>
+        </eSubpackages>
+      </eSubpackages>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages name="org" nsURI="gs-core/ecore.org" nsPrefix="org">
+    <eSubpackages name="graphstream" nsURI="gs-core/ecore.org.graphstream" nsPrefix="graphstream">
+      <eSubpackages name="graph" nsURI="gs-core/ecore.org.graphstream.graph" nsPrefix="graph">
+        <eClassifiers xsi:type="ecore:EClass" name="Edge" abstract="true" interface="true" eSuperTypes="//org/graphstream/graph/Element">
+          <eOperations name="isDirected">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+          </eOperations>
+          <eOperations name="isLoop">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+          </eOperations>
+          <eOperations name="getNode0">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Edge/getNode0/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getNode1">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Edge/getNode1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getSourceNode">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Edge/getSourceNode/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getTargetNode">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Edge/getTargetNode/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getOpposite">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Edge/getOpposite/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true" interface="true">
+          <eOperations name="getId">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations name="getIndex">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eOperations>
+          <eOperations name="getAttribute">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Element/getAttribute/T"/>
+            <eTypeParameters name="T"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getFirstAttributeOf">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Element/getFirstAttributeOf/T"/>
+            <eTypeParameters name="T"/>
+            <eParameters name="keys" eType="//datatypes/java/lang/StringArray"/>
+          </eOperations>
+          <eOperations name="getAttribute">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Element/getAttribute.1/T"/>
+            <eTypeParameters name="T"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="clazz">
+              <eGenericType>
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/Element/getAttribute.1/T"/>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+              </eGenericType>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getFirstAttributeOf">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Element/getFirstAttributeOf.1/T"/>
+            <eTypeParameters name="T"/>
+            <eParameters name="clazz">
+              <eGenericType>
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/Element/getFirstAttributeOf.1/T"/>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+              </eGenericType>
+            </eParameters>
+            <eParameters name="keys" eType="//datatypes/java/lang/StringArray"/>
+          </eOperations>
+          <eOperations name="getLabel" eType="//datatypes/java/lang/CharSequence">
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getNumber">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getVector">
+            <eGenericType eClassifier="//datatypes/java/util/ArrayList">
+              <eTypeArguments>
+                <eUpperBound eClassifier="//datatypes/java/lang/Number"/>
+              </eTypeArguments>
+            </eGenericType>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getArray" eType="//datatypes/java/lang/ObjectArray">
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getHash">
+            <eGenericType eClassifier="//datatypes/java/util/HashMap">
+              <eTypeArguments/>
+              <eTypeArguments/>
+            </eGenericType>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasAttribute">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasAttribute">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="clazz">
+              <eGenericType>
+                <eTypeArguments/>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+              </eGenericType>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasLabel">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasNumber">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasVector">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasArray">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasHash">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="key">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getAttributeKeyIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eOperations>
+          <eOperations name="getEachAttributeKey">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eOperations>
+          <eOperations name="getAttributeKeySet">
+            <eGenericType eClassifier="//datatypes/java/util/Collection">
+              <eTypeArguments>
+                <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eOperations>
+          <eOperations name="clearAttributes"/>
+          <eOperations name="addAttribute">
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="values" eType="//datatypes/java/lang/ObjectArray"/>
+          </eOperations>
+          <eOperations name="changeAttribute">
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="values" eType="//datatypes/java/lang/ObjectArray"/>
+          </eOperations>
+          <eOperations name="setAttribute">
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="values" eType="//datatypes/java/lang/ObjectArray"/>
+          </eOperations>
+          <eOperations name="addAttributes">
+            <eParameters name="attributes">
+              <eGenericType eClassifier="//datatypes/java/util/Map">
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eTypeArguments>
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeAttribute">
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getAttributeCount">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eOperations>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="Graph" abstract="true" interface="true" eSuperTypes="//org/graphstream/graph/Element //org/graphstream/stream/Pipe //org/graphstream/graph/Structure">
+          <eOperations name="getNode">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/getNode/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdge">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/getEdge/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="nodeFactory">
+            <eGenericType eClassifier="//datatypes/org/graphstream/graph/NodeFactory">
+              <eTypeArguments>
+                <eUpperBound eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eOperations>
+          <eOperations name="edgeFactory">
+            <eGenericType eClassifier="//datatypes/org/graphstream/graph/EdgeFactory">
+              <eTypeArguments>
+                <eUpperBound eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeArguments>
+            </eGenericType>
+          </eOperations>
+          <eOperations name="isStrict">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+          </eOperations>
+          <eOperations name="isAutoCreationEnabled">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+          </eOperations>
+          <eOperations name="nullAttributesAreErrors">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+          </eOperations>
+          <eOperations name="getStep">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+          </eOperations>
+          <eOperations name="setNullAttributesAreErrors">
+            <eParameters name="on">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="setNodeFactory">
+            <eParameters name="nf">
+              <eGenericType eClassifier="//datatypes/org/graphstream/graph/NodeFactory">
+                <eTypeArguments>
+                  <eUpperBound eClassifier="//org/graphstream/graph/Node"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eParameters>
+          </eOperations>
+          <eOperations name="setEdgeFactory">
+            <eParameters name="ef">
+              <eGenericType eClassifier="//datatypes/org/graphstream/graph/EdgeFactory">
+                <eTypeArguments>
+                  <eUpperBound eClassifier="//org/graphstream/graph/Edge"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eParameters>
+          </eOperations>
+          <eOperations name="setStrict">
+            <eParameters name="on">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="setAutoCreate">
+            <eParameters name="on">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="clear"/>
+          <eOperations name="addNode" eExceptions="//datatypes/org/graphstream/graph/IdAlreadyInUseException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/addNode/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeNode" eExceptions="//datatypes/org/graphstream/graph/ElementNotFoundException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeNode/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="addEdge" eExceptions="//datatypes/org/graphstream/graph/IdAlreadyInUseException //datatypes/org/graphstream/graph/ElementNotFoundException //datatypes/org/graphstream/graph/EdgeRejectedException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/addEdge/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="node1">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="node2">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="addEdge" eExceptions="//datatypes/org/graphstream/graph/IdAlreadyInUseException //datatypes/org/graphstream/graph/ElementNotFoundException //datatypes/org/graphstream/graph/EdgeRejectedException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/addEdge.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="from">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="to">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="directed">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeEdge" eExceptions="//datatypes/org/graphstream/graph/ElementNotFoundException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeEdge/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="from">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="to">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeEdge" eExceptions="//datatypes/org/graphstream/graph/ElementNotFoundException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeEdge.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="stepBegins">
+            <eParameters name="time">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="attributeSinks">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments eClassifier="//org/graphstream/stream/AttributeSink"/>
+            </eGenericType>
+          </eOperations>
+          <eOperations name="elementSinks">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments eClassifier="//org/graphstream/stream/ElementSink"/>
+            </eGenericType>
+          </eOperations>
+          <eOperations name="read" eExceptions="//datatypes/java/io/IOException //datatypes/org/graphstream/stream/GraphParseException //datatypes/org/graphstream/graph/ElementNotFoundException">
+            <eParameters name="filename">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="read" eExceptions="//datatypes/java/io/IOException //datatypes/org/graphstream/stream/GraphParseException">
+            <eParameters name="input" eType="//datatypes/org/graphstream/stream/file/FileSource"/>
+            <eParameters name="filename">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="write" eExceptions="//datatypes/java/io/IOException">
+            <eParameters name="filename">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="write" eExceptions="//datatypes/java/io/IOException">
+            <eParameters name="output" eType="//datatypes/org/graphstream/stream/file/FileSink"/>
+            <eParameters name="filename">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="display" eType="//datatypes/org/graphstream/ui/view/Viewer"/>
+          <eOperations name="display" eType="//datatypes/org/graphstream/ui/view/Viewer">
+            <eParameters name="autoLayout">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getNode" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/getNode.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdge" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/getEdge.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="addEdge" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException //datatypes/org/graphstream/graph/IdAlreadyInUseException //datatypes/org/graphstream/graph/EdgeRejectedException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/addEdge.2/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="index1">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+            <eParameters name="index2">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="addEdge" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException //datatypes/org/graphstream/graph/IdAlreadyInUseException //datatypes/org/graphstream/graph/EdgeRejectedException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/addEdge.3/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="fromIndex">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+            <eParameters name="toIndex">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+            <eParameters name="directed">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="addEdge" eExceptions="//datatypes/org/graphstream/graph/IdAlreadyInUseException //datatypes/org/graphstream/graph/EdgeRejectedException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/addEdge.4/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="node1" eType="//org/graphstream/graph/Node"/>
+            <eParameters name="node2" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="addEdge" eExceptions="//datatypes/org/graphstream/graph/IdAlreadyInUseException //datatypes/org/graphstream/graph/EdgeRejectedException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/addEdge.5/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="from" eType="//org/graphstream/graph/Node"/>
+            <eParameters name="to" eType="//org/graphstream/graph/Node"/>
+            <eParameters name="directed">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeEdge" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeEdge.2/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeEdge" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException //datatypes/org/graphstream/graph/ElementNotFoundException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeEdge.3/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="fromIndex">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+            <eParameters name="toIndex">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeEdge" eExceptions="//datatypes/org/graphstream/graph/ElementNotFoundException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeEdge.4/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="node1" eType="//org/graphstream/graph/Node"/>
+            <eParameters name="node2" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="removeEdge">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeEdge.5/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="edge" eType="//org/graphstream/graph/Edge"/>
+          </eOperations>
+          <eOperations name="removeNode" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeNode.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="removeNode">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Graph/removeNode.2/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="Node" abstract="true" interface="true" eSuperTypes="//org/graphstream/graph/Element">
+          <eOperations name="getGraph" eType="//org/graphstream/graph/Graph"/>
+          <eOperations name="getDegree">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eOperations>
+          <eOperations name="getOutDegree">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eOperations>
+          <eOperations name="getInDegree">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eOperations>
+          <eOperations name="hasEdgeToward">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasEdgeFrom">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasEdgeBetween">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdgeToward">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeToward/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdgeFrom">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeFrom/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdgeBetween">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeBetween/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdgeIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getEdgeIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEnteringEdgeIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getEnteringEdgeIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getLeavingEdgeIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getLeavingEdgeIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getNeighborNodeIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getNeighborNodeIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEdge">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdge/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="i">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEnteringEdge">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEnteringEdge/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="i">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getLeavingEdge">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getLeavingEdge/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="i">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getBreadthFirstIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getBreadthFirstIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getBreadthFirstIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getBreadthFirstIterator.1/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="directed">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getDepthFirstIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getDepthFirstIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getDepthFirstIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getDepthFirstIterator.1/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+            <eParameters name="directed">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEachEdge">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getEachEdge/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEachLeavingEdge">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getEachLeavingEdge/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEachEnteringEdge">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getEachEnteringEdge/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEdgeSet">
+            <eGenericType eClassifier="//datatypes/java/util/Collection">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getEdgeSet/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getLeavingEdgeSet">
+            <eGenericType eClassifier="//datatypes/java/util/Collection">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getLeavingEdgeSet/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEnteringEdgeSet">
+            <eGenericType eClassifier="//datatypes/java/util/Collection">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Node/getEnteringEdgeSet/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="toString">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+          </eOperations>
+          <eOperations name="hasEdgeToward">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="hasEdgeToward" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasEdgeFrom">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="hasEdgeFrom" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="hasEdgeBetween">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="hasEdgeBetween" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdgeToward">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeToward.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="getEdgeToward" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeToward.2/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdgeFrom">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeFrom.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="getEdgeFrom" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeFrom.2/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="getEdgeBetween">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeBetween.1/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+          </eOperations>
+          <eOperations name="getEdgeBetween" eExceptions="//datatypes/java/lang/IndexOutOfBoundsException">
+            <eGenericType eTypeParameter="//org/graphstream/graph/Node/getEdgeBetween.2/T"/>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+            <eParameters name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eParameters>
+          </eOperations>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="Structure" abstract="true" interface="true">
+          <eOperations name="getNodeCount">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eOperations>
+          <eOperations name="getEdgeCount">
+            <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+          </eOperations>
+          <eOperations name="getNodeIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Structure/getNodeIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEdgeIterator">
+            <eGenericType eClassifier="//datatypes/java/util/Iterator">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Structure/getEdgeIterator/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEachNode">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments>
+                <eUpperBound eTypeParameter="//org/graphstream/graph/Structure/getEachNode/T"/>
+              </eTypeArguments>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEachEdge">
+            <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+              <eTypeArguments>
+                <eUpperBound eTypeParameter="//org/graphstream/graph/Structure/getEachEdge/T"/>
+              </eTypeArguments>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getNodeSet">
+            <eGenericType eClassifier="//datatypes/java/util/Collection">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Structure/getNodeSet/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Node"/>
+            </eTypeParameters>
+          </eOperations>
+          <eOperations name="getEdgeSet">
+            <eGenericType eClassifier="//datatypes/java/util/Collection">
+              <eTypeArguments eTypeParameter="//org/graphstream/graph/Structure/getEdgeSet/T"/>
+            </eGenericType>
+            <eTypeParameters name="T">
+              <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+            </eTypeParameters>
+          </eOperations>
+        </eClassifiers>
+        <eSubpackages name="implementations" nsURI="gs-core/ecore.org.graphstream.graph.implementations" nsPrefix="implementations">
+          <eClassifiers xsi:type="ecore:EClass" name="AbstractEdge" eSuperTypes="//org/graphstream/graph/implementations/AbstractElement //org/graphstream/graph/Edge">
+            <eOperations name="toString">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eOperations>
+            <eOperations name="getNode0">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractEdge/getNode0/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getNode1">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractEdge/getNode1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getOpposite">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractEdge/getOpposite/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="getSourceNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractEdge/getSourceNode/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getTargetNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractEdge/getTargetNode/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="isLoop">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eOperations>
+            <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="//org/graphstream/graph/implementations/AbstractNode"/>
+            <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="//org/graphstream/graph/implementations/AbstractNode"/>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="directed">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EReference" name="graph" eType="//org/graphstream/graph/implementations/AbstractGraph"/>
+          </eClassifiers>
+          <eClassifiers xsi:type="ecore:EClass" name="AbstractElement" eSuperTypes="//org/graphstream/graph/Element">
+            <eOperations name="getAttribute">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractElement/getAttribute/T"/>
+              <eTypeParameters name="T"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getFirstAttributeOf">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf/T"/>
+              <eTypeParameters name="T"/>
+              <eParameters name="keys" eType="//datatypes/java/lang/StringArray"/>
+            </eOperations>
+            <eOperations name="getAttribute">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractElement/getAttribute.1/T"/>
+              <eTypeParameters name="T"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="clazz">
+                <eGenericType>
+                  <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractElement/getAttribute.1/T"/>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+                </eGenericType>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getFirstAttributeOf">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf.1/T"/>
+              <eTypeParameters name="T"/>
+              <eParameters name="clazz">
+                <eGenericType>
+                  <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractElement/getFirstAttributeOf.1/T"/>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+                </eGenericType>
+              </eParameters>
+              <eParameters name="keys" eType="//datatypes/java/lang/StringArray"/>
+            </eOperations>
+            <eOperations name="getLabel">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getNumber">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getVector">
+              <eGenericType eClassifier="//datatypes/java/util/ArrayList">
+                <eTypeArguments>
+                  <eUpperBound eClassifier="//datatypes/java/lang/Number"/>
+                </eTypeArguments>
+              </eGenericType>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getArray" eType="//datatypes/java/lang/ObjectArray">
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getHash">
+              <eGenericType eClassifier="//datatypes/java/util/HashMap">
+                <eTypeArguments/>
+                <eTypeArguments/>
+              </eGenericType>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasAttribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasAttribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="clazz">
+                <eGenericType>
+                  <eTypeArguments/>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaClass"/>
+                </eGenericType>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasLabel">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasNumber">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasVector">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasArray">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasHash">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="key">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getAttributeKeyIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="getEachAttributeKey">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="getAttributeKeySet">
+              <eGenericType eClassifier="//datatypes/java/util/Collection">
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="toString">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eOperations>
+            <eOperations name="getAttributeCount">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eOperations>
+            <eOperations name="clearAttributes"/>
+            <eOperations name="addAttribute">
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="values" eType="//datatypes/java/lang/ObjectArray"/>
+            </eOperations>
+            <eOperations name="changeAttribute">
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="values" eType="//datatypes/java/lang/ObjectArray"/>
+            </eOperations>
+            <eOperations name="setAttribute">
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="values" eType="//datatypes/java/lang/ObjectArray"/>
+            </eOperations>
+            <eOperations name="addAttributes">
+              <eParameters name="attributes">
+                <eGenericType eClassifier="//datatypes/java/util/Map">
+                  <eTypeArguments>
+                    <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                  </eTypeArguments>
+                  <eTypeArguments>
+                    <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+                  </eTypeArguments>
+                </eGenericType>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeAttribute">
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="id">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="index">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributes">
+              <eGenericType eClassifier="//datatypes/java/util/HashMap">
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eTypeArguments>
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributesBeingRemoved">
+              <eGenericType eClassifier="//datatypes/java/util/ArrayList">
+                <eTypeArguments>
+                  <eClassifier xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xsi:type="ecore:EClass" name="AbstractGraph" eSuperTypes="//org/graphstream/graph/implementations/AbstractElement //org/graphstream/graph/Graph //org/graphstream/stream/Replayable">
+            <eOperations name="nullAttributesAreErrors">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eOperations>
+            <eOperations name="getNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getNode/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getNode.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getEdge/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getEdge.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getNodeCount">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eOperations>
+            <eOperations name="getEdgeCount">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eOperations>
+            <eOperations name="getNodeIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getNodeIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEdgeIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getEdgeIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEachNode">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments>
+                  <eUpperBound eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getEachNode/T"/>
+                </eTypeArguments>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEachEdge">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments>
+                  <eUpperBound eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getEachEdge/T"/>
+                </eTypeArguments>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getNodeSet">
+              <eGenericType eClassifier="//datatypes/java/util/Collection">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getNodeSet/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEdgeSet">
+              <eGenericType eClassifier="//datatypes/java/util/Collection">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/getEdgeSet/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="iterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eClassifier="//org/graphstream/graph/Node"/>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="nodeFactory">
+              <eGenericType eClassifier="//datatypes/org/graphstream/graph/NodeFactory">
+                <eTypeArguments>
+                  <eUpperBound eClassifier="//org/graphstream/graph/Node"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="edgeFactory">
+              <eGenericType eClassifier="//datatypes/org/graphstream/graph/EdgeFactory">
+                <eTypeArguments>
+                  <eUpperBound eClassifier="//org/graphstream/graph/Edge"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="isStrict">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eOperations>
+            <eOperations name="isAutoCreationEnabled">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eOperations>
+            <eOperations name="setStrict">
+              <eParameters name="on">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="stepBegins">
+              <eParameters name="time">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="clear"/>
+            <eOperations name="addNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/addNode/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="addEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/addEdge/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="node1">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="node2">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="addEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/addEdge.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="from">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="to">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="directed">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="addEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/addEdge.2/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="index1">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+              <eParameters name="index2">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="addEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/addEdge.3/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="fromIndex">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+              <eParameters name="toIndex">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+              <eParameters name="directed">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="addEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/addEdge.4/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="node1" eType="//org/graphstream/graph/Node"/>
+              <eParameters name="node2" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="addEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/addEdge.5/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="from" eType="//org/graphstream/graph/Node"/>
+              <eParameters name="to" eType="//org/graphstream/graph/Node"/>
+              <eParameters name="directed">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeNode/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeNode.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeNode">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeNode.2/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="removeEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeEdge/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeEdge.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeEdge.2/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="edge" eType="//org/graphstream/graph/Edge"/>
+            </eOperations>
+            <eOperations name="removeEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeEdge.3/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="from">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="to">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeEdge.4/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="fromIndex">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+              <eParameters name="toIndex">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="removeEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractGraph/removeEdge.5/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="node1" eType="//org/graphstream/graph/Node"/>
+              <eParameters name="node2" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="attributeSinks">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments eClassifier="//org/graphstream/stream/AttributeSink"/>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="elementSinks">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments eClassifier="//org/graphstream/stream/ElementSink"/>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="addAttributeSink">
+              <eParameters name="sink" eType="//org/graphstream/stream/AttributeSink"/>
+            </eOperations>
+            <eOperations name="addElementSink">
+              <eParameters name="sink" eType="//org/graphstream/stream/ElementSink"/>
+            </eOperations>
+            <eOperations name="addSink">
+              <eParameters name="sink" eType="//org/graphstream/stream/Sink"/>
+            </eOperations>
+            <eOperations name="clearAttributeSinks"/>
+            <eOperations name="clearElementSinks"/>
+            <eOperations name="clearSinks"/>
+            <eOperations name="removeAttributeSink">
+              <eParameters name="sink" eType="//org/graphstream/stream/AttributeSink"/>
+            </eOperations>
+            <eOperations name="removeElementSink">
+              <eParameters name="sink" eType="//org/graphstream/stream/ElementSink"/>
+            </eOperations>
+            <eOperations name="removeSink">
+              <eParameters name="sink" eType="//org/graphstream/stream/Sink"/>
+            </eOperations>
+            <eOperations name="edgeAttributeAdded">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="edgeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="value">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="edgeAttributeChanged">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="edgeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="oldValue">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+              <eParameters name="newValue">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="edgeAttributeRemoved">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="edgeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="graphAttributeAdded">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="value">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="graphAttributeChanged">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="oldValue">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+              <eParameters name="newValue">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="graphAttributeRemoved">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="nodeAttributeAdded">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="nodeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="value">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="nodeAttributeChanged">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="nodeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="oldValue">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+              <eParameters name="newValue">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="nodeAttributeRemoved">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="nodeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="attribute">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="edgeAdded">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="edgeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="fromNodeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="toNodeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="directed">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="edgeRemoved">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="edgeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="graphCleared">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="nodeAdded">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="nodeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="nodeRemoved">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="nodeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="stepBegins">
+              <eParameters name="sourceId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+              <eParameters name="timeId">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+              </eParameters>
+              <eParameters name="step">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="display" eType="//datatypes/org/graphstream/ui/view/Viewer"/>
+            <eOperations name="display" eType="//datatypes/org/graphstream/ui/view/Viewer">
+              <eParameters name="autoLayout">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="read" eExceptions="//datatypes/java/io/IOException //datatypes/org/graphstream/stream/GraphParseException">
+              <eParameters name="input" eType="//datatypes/org/graphstream/stream/file/FileSource"/>
+              <eParameters name="filename">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="read" eExceptions="//datatypes/java/io/IOException //datatypes/org/graphstream/stream/GraphParseException //datatypes/org/graphstream/graph/ElementNotFoundException">
+              <eParameters name="filename">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="write" eExceptions="//datatypes/java/io/IOException">
+              <eParameters name="output" eType="//datatypes/org/graphstream/stream/file/FileSink"/>
+              <eParameters name="filename">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="write" eExceptions="//datatypes/java/io/IOException">
+              <eParameters name="filename">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getReplayController" eType="//datatypes/org/graphstream/stream/Replayable/Controller"/>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="strictChecking">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="autoCreate">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="nodeFactory">
+              <eGenericType eClassifier="//datatypes/org/graphstream/graph/NodeFactory">
+                <eTypeArguments>
+                  <eUpperBound eClassifier="//org/graphstream/graph/Node"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="edgeFactory">
+              <eGenericType eClassifier="//datatypes/org/graphstream/graph/EdgeFactory">
+                <eTypeArguments>
+                  <eUpperBound eClassifier="//org/graphstream/graph/Edge"/>
+                </eTypeArguments>
+              </eGenericType>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="step">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="nullAttributesAreErrors">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eStructuralFeatures>
+            <eStructuralFeatures xsi:type="ecore:EAttribute" name="replayId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eStructuralFeatures>
+          </eClassifiers>
+          <eClassifiers xsi:type="ecore:EClass" name="AbstractNode" eSuperTypes="//org/graphstream/graph/implementations/AbstractElement //org/graphstream/graph/Node">
+            <eOperations name="getDegree">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eOperations>
+            <eOperations name="getInDegree">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eOperations>
+            <eOperations name="getOutDegree">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+            </eOperations>
+            <eOperations name="hasEdgeToward">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="hasEdgeToward">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasEdgeToward">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasEdgeFrom">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="hasEdgeFrom">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasEdgeFrom">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasEdgeBetween">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="hasEdgeBetween">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="hasEdgeBetween">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdgeToward">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeToward/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="getEdgeToward">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdgeToward">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeToward.2/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdgeFrom">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="getEdgeFrom">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdgeFrom">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeFrom.2/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdgeBetween">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="node" eType="//org/graphstream/graph/Node"/>
+            </eOperations>
+            <eOperations name="getEdgeBetween">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.1/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="index">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdgeBetween">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeBetween.2/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="id">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEdgeIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEnteringEdgeIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEnteringEdgeIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getLeavingEdgeIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getLeavingEdgeIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEachEdge">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEachEdge/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEachEnteringEdge">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEachEnteringEdge/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEachLeavingEdge">
+              <eGenericType eClassifier="//datatypes/java/lang/Iterable">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEachLeavingEdge/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEdgeSet">
+              <eGenericType eClassifier="//datatypes/java/util/Collection">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdgeSet/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getEnteringEdgeSet">
+              <eGenericType eClassifier="//datatypes/java/util/Collection">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEnteringEdgeSet/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getLeavingEdgeSet">
+              <eGenericType eClassifier="//datatypes/java/util/Collection">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getLeavingEdgeSet/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="iterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eClassifier="//org/graphstream/graph/Edge"/>
+              </eGenericType>
+            </eOperations>
+            <eOperations name="getEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEdge/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="i">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getEnteringEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getEnteringEdge/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="i">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getLeavingEdge">
+              <eGenericType eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getLeavingEdge/T"/>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Edge"/>
+              </eTypeParameters>
+              <eParameters name="i">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getNeighborNodeIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getNeighborNodeIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getBreadthFirstIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getBreadthFirstIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getBreadthFirstIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getBreadthFirstIterator.1/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="directed">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="getDepthFirstIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getDepthFirstIterator/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+            </eOperations>
+            <eOperations name="getDepthFirstIterator">
+              <eGenericType eClassifier="//datatypes/java/util/Iterator">
+                <eTypeArguments eTypeParameter="//org/graphstream/graph/implementations/AbstractNode/getDepthFirstIterator.1/T"/>
+              </eGenericType>
+              <eTypeParameters name="T">
+                <eBounds eClassifier="//org/graphstream/graph/Node"/>
+              </eTypeParameters>
+              <eParameters name="directed">
+                <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              </eParameters>
+            </eOperations>
+            <eOperations name="isEnteringEdge">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="e" eType="//org/graphstream/graph/Edge"/>
+            </eOperations>
+            <eOperations name="isLeavingEdge">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="e" eType="//org/graphstream/graph/Edge"/>
+            </eOperations>
+            <eOperations name="isIncidentEdge">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+              <eParameters name="e" eType="//org/graphstream/graph/Edge"/>
+            </eOperations>
+            <eStructuralFeatures xsi:type="ecore:EReference" name="graph" eType="//org/graphstream/graph/Graph"/>
+          </eClassifiers>
+        </eSubpackages>
+      </eSubpackages>
+      <eSubpackages name="stream" nsURI="gs-core/ecore.org.graphstream.stream" nsPrefix="stream">
+        <eClassifiers xsi:type="ecore:EClass" name="AttributeSink" abstract="true" interface="true">
+          <eOperations name="graphAttributeAdded">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="value">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="graphAttributeChanged">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="oldValue">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+            <eParameters name="newValue">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="graphAttributeRemoved">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="nodeAttributeAdded">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="nodeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="value">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="nodeAttributeChanged">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="nodeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="oldValue">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+            <eParameters name="newValue">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="nodeAttributeRemoved">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="nodeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="edgeAttributeAdded">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="edgeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="value">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="edgeAttributeChanged">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="edgeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="oldValue">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+            <eParameters name="newValue">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="edgeAttributeRemoved">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="edgeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="attribute">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="ElementSink" abstract="true" interface="true">
+          <eOperations name="nodeAdded">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="nodeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="nodeRemoved">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="nodeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="edgeAdded">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="edgeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="fromNodeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="toNodeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="directed">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="edgeRemoved">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="edgeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="graphCleared">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+          </eOperations>
+          <eOperations name="stepBegins">
+            <eParameters name="sourceId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+            </eParameters>
+            <eParameters name="timeId">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//ELong"/>
+            </eParameters>
+            <eParameters name="step">
+              <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+            </eParameters>
+          </eOperations>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="Pipe" abstract="true" interface="true" eSuperTypes="//org/graphstream/stream/Source //org/graphstream/stream/Sink"/>
+        <eClassifiers xsi:type="ecore:EClass" name="Replayable" abstract="true" interface="true">
+          <eOperations name="getReplayController" eType="//datatypes/org/graphstream/stream/Replayable/Controller"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EClass" name="Sink" abstract="true" interface="true" eSuperTypes="//org/graphstream/stream/AttributeSink //org/graphstream/stream/ElementSink"/>
+        <eClassifiers xsi:type="ecore:EClass" name="Source" abstract="true" interface="true">
+          <eOperations name="addSink">
+            <eParameters name="sink" eType="//org/graphstream/stream/Sink"/>
+          </eOperations>
+          <eOperations name="removeSink">
+            <eParameters name="sink" eType="//org/graphstream/stream/Sink"/>
+          </eOperations>
+          <eOperations name="addAttributeSink">
+            <eParameters name="sink" eType="//org/graphstream/stream/AttributeSink"/>
+          </eOperations>
+          <eOperations name="removeAttributeSink">
+            <eParameters name="sink" eType="//org/graphstream/stream/AttributeSink"/>
+          </eOperations>
+          <eOperations name="addElementSink">
+            <eParameters name="sink" eType="//org/graphstream/stream/ElementSink"/>
+          </eOperations>
+          <eOperations name="removeElementSink">
+            <eParameters name="sink" eType="//org/graphstream/stream/ElementSink"/>
+          </eOperations>
+          <eOperations name="clearElementSinks"/>
+          <eOperations name="clearAttributeSinks"/>
+          <eOperations name="clearSinks"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

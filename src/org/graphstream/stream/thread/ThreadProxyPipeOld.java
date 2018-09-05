@@ -31,6 +31,9 @@
  */
 package org.graphstream.stream.thread;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
@@ -42,9 +45,6 @@ import org.miv.mbox.CannotPostException;
 import org.miv.mbox.MBox;
 import org.miv.mbox.MBoxListener;
 import org.miv.mbox.MBoxStandalone;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Filter that allows to pass graph events between two threads without explicit

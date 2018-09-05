@@ -31,9 +31,9 @@
  */
 package org.graphstream.ui.swingViewer;
 
-import org.graphstream.ui.view.View;
-
 import javax.swing.JPanel;
+
+import org.graphstream.ui.view.View;
 
 /**
  * A view on a graphic graph.

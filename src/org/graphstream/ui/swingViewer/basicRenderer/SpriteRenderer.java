@@ -40,12 +40,12 @@ import org.graphstream.ui.graphicGraph.GraphicElement;
 import org.graphstream.ui.graphicGraph.GraphicSprite;
 import org.graphstream.ui.graphicGraph.StyleGroup;
 import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants;
-import org.graphstream.ui.graphicGraph.stylesheet.Values;
 import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants.FillMode;
 import org.graphstream.ui.graphicGraph.stylesheet.StyleConstants.SizeMode;
-import org.graphstream.ui.view.Camera;
+import org.graphstream.ui.graphicGraph.stylesheet.Values;
 import org.graphstream.ui.swingViewer.util.DefaultCamera;
 import org.graphstream.ui.swingViewer.util.GraphMetrics;
+import org.graphstream.ui.view.Camera;
 
 public class SpriteRenderer extends ElementRenderer {
 	protected GraphMetrics metrics;

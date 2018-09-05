@@ -42,7 +42,7 @@ package org.graphstream.stream;
  * @see Sink
  * @see Pipe
  */
-public interface Source {
+public interface Source extends ecore.org.graphstream.stream.Source {
 	/**
 	 * Add a sink for all graph events (attributes and graph elements) coming
 	 * from this source. This is similar to registering a sink for attributes an

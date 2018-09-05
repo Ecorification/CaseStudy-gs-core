@@ -31,6 +31,8 @@
  */
 package org.graphstream.ui.viewer.test;
 
+import java.util.EnumSet;
+
 import org.graphstream.graph.Edge;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
@@ -40,8 +42,6 @@ import org.graphstream.ui.view.ViewerListener;
 import org.graphstream.ui.view.ViewerPipe;
 import org.graphstream.ui.view.util.DefaultMouseManager;
 import org.graphstream.ui.view.util.InteractiveElement;
-
-import java.util.EnumSet;
 
 /**
  * Test the viewer.

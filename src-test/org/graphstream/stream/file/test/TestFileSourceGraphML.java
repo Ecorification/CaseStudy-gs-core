@@ -31,15 +31,18 @@
  */
 package org.graphstream.stream.file.test;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import java.io.IOException;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.AdjacencyListGraph;
 import org.graphstream.stream.file.FileSourceGraphML;
 import org.junit.Test;
-
-import java.io.IOException;
-
-import static org.junit.Assert.*;
 
 public class TestFileSourceGraphML {
 

@@ -42,5 +42,5 @@ package org.graphstream.stream;
  * @see Source
  * @see Sink
  */
-public interface Pipe extends Source, Sink {
+public interface Pipe extends Source, Sink, ecore.org.graphstream.stream.Pipe {
 }
