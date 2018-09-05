@@ -41,6 +41,8 @@ import org.graphstream.graph.Element;
 import org.graphstream.ui.graphicGraph.stylesheet.Style;
 import org.graphstream.ui.graphicGraph.stylesheet.Values;
 
+import ecore.NullEObject;
+
 /**
  * A gentle little sprite.
  * 
@@ -99,7 +101,7 @@ import org.graphstream.ui.graphicGraph.stylesheet.Values;
  * @see SpriteManager
  * @see SpriteFactory
  */
-public class Sprite implements Element {
+public class Sprite extends NullEObject implements Element {
 	// Attribute
 
 	/**

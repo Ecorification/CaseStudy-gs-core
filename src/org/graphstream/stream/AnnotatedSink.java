@@ -42,6 +42,8 @@ import java.util.HashMap;
 
 import org.graphstream.stream.SourceBase.ElementType;
 
+import ecore.NullEObject;
+
 /**
  * A sink easily allowing a bind between attribute modifications and method
  * calls.
@@ -73,7 +75,7 @@ import org.graphstream.stream.SourceBase.ElementType;
  * }
  * </pre>
  */
-public abstract class AnnotatedSink implements Sink {
+public abstract class AnnotatedSink extends NullEObject implements Sink {
 	/**
 	 * Annotation used to bind an event to a method. This bind is composed of a
 	 * name (the attribute key) and an element type. For example, the annotation

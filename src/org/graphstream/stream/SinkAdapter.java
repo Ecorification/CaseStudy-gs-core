@@ -31,6 +31,8 @@
  */
 package org.graphstream.stream;
 
+import ecore.NullEObject;
+
 /**
  * Adapter for the {@link Sink} interface.
  * 
@@ -38,7 +40,7 @@ package org.graphstream.stream;
  * All methods are empty.
  * </p>
  */
-public class SinkAdapter implements Sink {
+public class SinkAdapter extends NullEObject implements Sink {
 	public void edgeAttributeAdded(String sourceId, long timeId, String edgeId,
 			String attribute, Object value) {
 	}

@@ -38,7 +38,9 @@ import org.graphstream.graph.Graph;
 import org.graphstream.graph.implementations.AdjacencyListGraph;
 import org.graphstream.stream.Sink;
 
-public class GraphSpells implements Sink {
+import ecore.NullEObject;
+
+public class GraphSpells extends NullEObject implements Sink {
     private static final Logger logger = Logger.getLogger(GraphSpells.class.getSimpleName());
 
 	CumulativeSpells graph;

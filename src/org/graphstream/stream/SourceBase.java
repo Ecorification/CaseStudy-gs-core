@@ -38,6 +38,8 @@ import java.util.List;
 import org.graphstream.graph.implementations.AbstractElement.AttributeChangeEvent;
 import org.graphstream.stream.sync.SourceTime;
 
+import ecore.NullEObject;
+
 /**
  * Base implementation of an input that provide basic sink handling.
  * 
@@ -60,7 +62,7 @@ import org.graphstream.stream.sync.SourceTime;
  * loops if a sink modifies the input during event handling.
  * </p>
  */
-public abstract class SourceBase implements Source {
+public abstract class SourceBase extends NullEObject implements Source {
 	// Attribute
 
 	public enum ElementType {

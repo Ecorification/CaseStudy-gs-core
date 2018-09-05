@@ -59,6 +59,8 @@ import org.graphstream.ui.layout.LayoutRunner;
 import org.graphstream.ui.layout.Layouts;
 import org.graphstream.ui.view.GraphRenderer;
 
+import ecore.NullEObject;
+
 /**
  * Output graph in image files.
  * 
@@ -87,7 +89,7 @@ import org.graphstream.ui.view.GraphRenderer;
  * 
  * </pre>
  */
-public class FileSinkImages implements FileSink {
+public class FileSinkImages extends NullEObject implements FileSink {
 	/**
 	 * Output resolutions.
 	 */

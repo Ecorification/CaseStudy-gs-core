@@ -40,7 +40,9 @@ import javax.xml.stream.XMLStreamException;
 
 import org.graphstream.stream.AttributeSink;
 
-public class GEXFAttributes implements GEXFElement, AttributeSink {
+import ecore.NullEObject;
+
+public class GEXFAttributes extends NullEObject implements GEXFElement, AttributeSink {
 	GEXF root;
 
 	ClassType type;

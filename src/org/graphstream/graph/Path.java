@@ -37,6 +37,8 @@ import java.util.List;
 import java.util.Stack;
 import java.util.logging.Logger;
 
+import ecore.NullEObject;
+
 /**
  * Path description.
  * 
@@ -65,7 +67,7 @@ import java.util.logging.Logger;
  * grow it and the {@link #popEdge()} or {@link #popNode()}.
  * 
  */
-public class Path implements Structure {
+public class Path extends NullEObject implements Structure {
 
     /**
      * class level logger

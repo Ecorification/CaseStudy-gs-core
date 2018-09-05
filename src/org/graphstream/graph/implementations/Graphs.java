@@ -60,6 +60,8 @@ import org.graphstream.stream.file.FileSink;
 import org.graphstream.stream.file.FileSource;
 import org.graphstream.ui.view.Viewer;
 
+import ecore.NullEObject;
+
 public class Graphs {
 
     private static final Logger logger = Logger.getLogger(Graphs.class.getSimpleName());
@@ -230,7 +232,7 @@ public class Graphs {
 		return o;
 	}
 
-	static class SynchronizedElement<U extends Element> implements Element {
+	static class SynchronizedElement<U extends Element> extends NullEObject implements Element {
 
 		private final ReentrantLock attributeLock;
 		protected final U wrappedElement;

@@ -31,6 +31,8 @@
  */
 package org.graphstream.stream;
 
+import ecore.NullEObject;
+
 /**
  * Adapter for the input interface.
  * 
@@ -38,7 +40,7 @@ package org.graphstream.stream;
  * All methods are empty.
  * </p>
  */
-public class SourceAdapter implements Source {
+public class SourceAdapter extends NullEObject implements Source {
 	public void addAttributeSink(AttributeSink sink) {
 	}
 

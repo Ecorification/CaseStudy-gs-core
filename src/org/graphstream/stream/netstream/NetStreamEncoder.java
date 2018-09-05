@@ -44,10 +44,12 @@ import java.util.logging.Logger;
 
 import org.graphstream.stream.binary.ByteEncoder;
 
+import ecore.NullEObject;
+
 /**
  * @since 22/01/16.
  */
-public class NetStreamEncoder implements ByteEncoder {
+public class NetStreamEncoder extends NullEObject implements ByteEncoder {
     private static final Logger LOGGER = Logger.getLogger(NetStreamEncoder.class.getName());
 
     protected final List<Transport> transportList;

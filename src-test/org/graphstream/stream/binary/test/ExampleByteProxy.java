@@ -40,6 +40,8 @@ import org.graphstream.stream.binary.ByteEncoder;
 import org.graphstream.stream.binary.ByteFactory;
 import org.graphstream.stream.binary.ByteProxy;
 
+import ecore.NullEObject;
+
 /**
  * @since 01/02/16.
  */
@@ -89,7 +91,7 @@ public class ExampleByteProxy {
         }
     }
 
-    static class InternalByteEncoder implements ByteEncoder {
+    static class InternalByteEncoder extends NullEObject implements ByteEncoder {
         Transport transport;
 
         @Override
