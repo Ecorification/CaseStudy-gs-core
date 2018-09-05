@@ -25,7 +25,7 @@ import org.graphstream.ui.view.Viewer;
  * Unification class for the class AbstractGraph
  */
 @SuppressWarnings("all")
-public class UnifiedAbstractGraph extends AbstractElement implements AbstractGraph {
+public abstract class UnifiedAbstractGraph extends AbstractElement implements AbstractGraph {
   @DelegateDeclared
   protected AbstractGraph ecoreImplementation;
   

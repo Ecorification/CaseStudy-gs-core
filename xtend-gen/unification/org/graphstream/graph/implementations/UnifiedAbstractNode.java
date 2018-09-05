@@ -14,7 +14,7 @@ import org.graphstream.graph.implementations.AbstractElement;
  * Unification class for the class AbstractNode
  */
 @SuppressWarnings("all")
-public class UnifiedAbstractNode extends AbstractElement implements AbstractNode {
+public abstract class UnifiedAbstractNode extends AbstractElement implements AbstractNode {
   @DelegateDeclared
   protected AbstractNode ecoreImplementation;
   

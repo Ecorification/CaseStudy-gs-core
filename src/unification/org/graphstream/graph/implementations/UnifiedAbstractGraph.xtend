@@ -9,7 +9,7 @@ import org.graphstream.graph.implementations.AbstractElement
 /**
  * Unification class for the class AbstractGraph
  */
-class UnifiedAbstractGraph extends AbstractElement implements AbstractGraph {
+abstract class UnifiedAbstractGraph extends AbstractElement implements AbstractGraph {
 	
 	@DelegateDeclared
 	protected var AbstractGraph ecoreImplementation

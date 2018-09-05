@@ -52,9 +52,6 @@ public class ImplementationsFactoryImpl extends EFactoryImpl implements Implemen
     public EObject create(EClass eClass) {
         switch (eClass.getClassifierID()) {
 			case ImplementationsPackage.ABSTRACT_EDGE: return createAbstractEdge();
-			case ImplementationsPackage.ABSTRACT_ELEMENT: return createAbstractElement();
-			case ImplementationsPackage.ABSTRACT_GRAPH: return createAbstractGraph();
-			case ImplementationsPackage.ABSTRACT_NODE: return createAbstractNode();
 			default:
 			    throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 			     }
@@ -66,27 +63,6 @@ public class ImplementationsFactoryImpl extends EFactoryImpl implements Implemen
 	public AbstractEdge createAbstractEdge() {
 		return new AbstractEdge(); // origin code instance
 	}			
-	
-	/**
-	 * @generated
-	 */
-	public AbstractElement createAbstractElement() {
-		return new AbstractElement(); // origin code instance
-	}			
-	
-	/**
-	 * @generated
-	 */
-	public AbstractGraph createAbstractGraph() {
-		return new AbstractGraph(); // origin code instance
-	}			
-	
-	/**
-	 * @generated
-	 */
-	public AbstractNode createAbstractNode() {
-		return new AbstractNode(); // origin code instance
-	}	
 	
 	/**
 	 * @generated

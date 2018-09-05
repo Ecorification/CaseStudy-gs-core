@@ -12,7 +12,7 @@ import org.graphstream.graph.implementations.AbstractNode;
  * Unification class for the class AbstractEdge
  */
 @SuppressWarnings("all")
-public class UnifiedAbstractEdge extends AbstractElement implements AbstractEdge {
+public abstract class UnifiedAbstractEdge extends AbstractElement implements AbstractEdge {
   @DelegateDeclared
   protected AbstractEdge ecoreImplementation;
   
